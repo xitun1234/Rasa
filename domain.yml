@@ -1,0 +1,95 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - inform
+  - search_provider
+  - out_of_scope
+  - zz
+  - thanks
+
+entities:
+  - location
+  - facility_type
+  - facility_id
+
+
+slots:
+  location:
+    type: text
+  facility_type:
+    type: text
+  facility_id:
+    type: unfeaturized
+  facility_address:
+    type: unfeaturized
+
+actions:
+  - utter_greet
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_happy
+  - utter_goodbye
+  - utter_iamabot
+  - utter_ask_location
+  - utter_how_can_i_help
+  - utter_ask_facility_type
+  - utter_address
+  - utter_noworries
+  - find_facility_types
+  - utter_zz
+  - find_healthcare_address
+
+forms:
+- facility_form
+
+responses:
+  utter_greet:
+  - text: "Hi. What are you looking for?"
+  - text: "Hey there! Please choose one of the healthcare facility options:"
+  - text: "Hello! What can I help you find today?"
+  
+  utter_zz:
+  - text: "Hey there! Please choose one of the healthcare facility options:"
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+  utter_noworries:
+  - text: "My pleasure."
+  - text: "You are welcome!"
+
+  utter_how_can_i_help:
+  - text: "Hello. I am a medicare locator. I can help you find nearset hospital. How can I help?"
+  - text: "Hi. My name is mediacare locator. How can I help you today?"
+
+  utter_ask_facility_type:
+  - text: "Choose one of the following to search for: hospital, nursing home, or home health agency."
+
+  utter_ask_location:
+  - text: "Please provide your city name."
+  - text: "What is your current city?"
+  - text: "Please provide your city name or zip code."
+  - text: "Please enter your zip code or city name to find local providers."
+
+  utter_address:
+  - text: "The address is {facility_address}."
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
