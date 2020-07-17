@@ -1,308 +1,410 @@
+## intent:greet
+- Xin chào.
+- Hi shop
+- hi
+- hello
+- Chào shop
+- Alo ad
+- Alo bot
+- Shop ơi
+- Bot ơi
+
+## intent:ask_what
+- [Kích thước](phone_property) của [Samsung Galaxy S10](phone_name) là bao nhiêu?
+- Cho em hỏi [iPhone 11](phone_name) mấy [sim](phone_property) vậy ạ?
+- Cho hỏi [ram](phone_property) khả dụng của máy [Samsung Galaxy A51](phone_name) là bao nhiêu ạ?
+- Cho em hỏi [OPPO A91](phone_name) mấy [sim](phone_property) vậy ạ?
+- [Ram](phone_property) trống [Samsung Galaxy A51](phone_name) còn bao nhiêu ạ?
+- Cho mình hỏi điện thoại [Samsung Galaxy A51](phone_name) hỗ trợ [4G](phone_property) LTE cat mấy ạ?
+- Cho em hỏi [Huawei Nova 7i](phone_name) [camera trước](phone_property) bao nhiêu mp vậy ạ?
+- Cho em hỏi [iPhone Xs Max](phone_name) xài [cpu](phone_property) gì vậy?
+- Cho em hỏi [iPhone 11](phone_name) [quay video](phone_property) độ phân giải nhiêu ạ?
+- Cho em hỏi [iPhone Xs Max](phone_name) [pin](phone_property) bao nhiêu?
+- [Độ phân giải màn hình](phone_property) của [Phone 11](phone_name) là bao nhiêu?
+- Cho em hỏi là [Vivo Y19](phone_name) [chụp ảnh](phone_property) rõ nét ko ạ?
+- Cho mình hỏi [BlackBerry KEYone](phone_name) có mấy [sim](phone_property) vậy?
+- Cho em hỏi điện thoại [BlackBerry KEYone](phone_name) chạy [android](phone_property) mậy vậy?
+- Cho em hỏi [BlackBerry Evolve](phone_name) mấy [sim](phone_property) vậy ạ?
+- Cho mình hỏi [Huawei Y9 Prime](phone_name) xài [kính cảm ứng](phone_property) gì vậy?
+- Cho em hỏi máy [Xiaomi Redmi Note 8 Pro](phone_name) xài [chất liệu](phone_property) khung gì ạ?
+- Cho em hỏi [cấu hình](phone_property) [Vivo Y19](phone_name) với ạ?
+- Cho em hỏi [giá](phone_property) [Vivo Y19](phone_name) là bao nhiêu tiền ạ?
+- [Ram](phone_property) [OPPO A5](phone_name) là  bao nhiêu ạ?
+- [Chuẩn kháng nước](phone_property) của [iPhone 11](phone_name) là bao nhiêu?
+- Cho em hỏi điện thoại [Vivo Y17](phone_name) chạy [android](phone_property) mấy vậy?
+- ad cho mình hỏi [pin](phone_property) ổn định của [Huawei Nova 3i](phone_name) là dùng đc [bao lâu](phone_property_value) ?
+- [iPhone Xs 64GB](phone_name) có tính nang [chặn tin nhắn](phone_property) không vậy ad?
+- [Nokia](phone_name) 110 [danh bạ](phone_property) bao nhiêu số ạ
+- [Realme C2](phone_name) bao nhiêu [tiền](phone_property) ạ
+- [Cấu hình](phone_property) [iPhone 11](phone_name) là bao nhiêu?
+- Cho em hỏi [OPPO A5](phone_name) bao nhiêu [tiền](phone_property) ạ
+- [Giá](phone_property) của [iPhone Xs Max](phone_name) là bao nhiêu?
+- Cho em hỏi [giá](phone_property) [iPhone 11](phone_name) hiện tại là bao nhiêu?
+- Mua [trả góp](phone_property) [Realme 5 Pro](phone_name) [giá](phone_property) bao nhiêu ạ
+- Mua điện thoại [OPPO Reno2](phone_name) có [khuyến mãi](phone_property) gì ko?
+- Cho em hỏi [pin](phone_property) của [iPhone 7 Plus](phone_name) [chơi game](phone_property) [bao lâu](phone_property_value) ạ?
+- Cho em hỏi [Pin](phone_property) của [iPhone 7 Plus](phone_name) chơi game [bao lâu](phone_property_value) ạ?
+- [OPPO Reno2 F](phone_name) [bao lâu](phone_property_value) thì hết [pin](phone_property) ạ
+- Cho em hỏi điện thoại [BlackBerry KEYone](phone_name) chạy [android](phone_property) mấy vậy?
+- Cần những thủ tục và giấy tờ gì để mua [trả góp](phone_property) được điện thoại [Vivo Y17](phone_name) ạ?
+- Cho em hỏi giấy tờ [trả góp](phone_property)  [iPhone 11](phone_name) với ạ?
+- Cho em hỏi [OPPO Reno2 F](phone_name) [bao lâu](phone_property_value) thì hết [pin](phone_property) ạ?
+- Cho em hỏi [pin](phone_property) [iPhone 7](phone_name) [sử dụng](phone_property_value) được [bao lâu](phone_property_value) ạ?
+- Máy [Realme 5](phone_name) [sạc](phone_property) [mấy tiếng](phone_property_value) mới đầy ạ?
+- Máy [Itel S15 Pro](phone_name) này [sạc](phone_property) [bao lâu](phone_property_value)
+- Cho em hỏi chính sách [bảo hành](phone_property) sản phẩm [OPPO Reno2](phone_name) này ạ?
+- Cho em hỏi máy [Xiaomi Redmi Note 9S](phone_name) xài [chất liệu](phone_property) khung gì ạ?
+- [Tỉ lệ của màn hình](phone_property) [Realme 6](phone_name) là bao nhiêu?
+- Máy [Vivo Y12](phone_name) nếu dùng 3g lướt facebook với xem youtube thì [bao nhiêu](phone_property_value) tiếng hết [pin](phone_property) ạ?
+- Cho em hỏi [Samsung Galaxy A30s](phone_name) xài [bao lâu](phone_property_value) thì hết [pin](phone_property)?
+- Cho em hỏi [Huawei P30 Lite](phone_name) sử dụng [bao lâu](phone_property_value) thì hết [pin](phone_property)?
+- [Realme C2](phone_name) bao nhiêu [tiền](phone_property) ạ?
+- Cho em hỏi là [Vivo Y19](phone_name) [chụp ảnh](phone_property) rõ nét ko ạ?
+- Mua điện thoại [OPPO A5](phone_name) trả góp có kèm [khuyến mãi](phone_property) sim ko?
+- Cho mình hỏi [ram](phone_property) khả dụng của [OPPO A5](phone_name) còn bao nhiêu ạ ?
+- [Độ phân giải màn hình](phone_property) của [iPhone 11 Pro Max](phone_name) là bao nhiêu vậy?
+- [iPhone 11](phone_name) có các bản [màu](phone_property) gì ạ?
+- [iPhone 11](phone_name) có [tỉ lệ màn hình](phone_property) so với thân máy là bao nhiêu?
+- Cho e hỏi [Samsung Galaxy Note 9](phone_name) 100% pin [chơi game](phone_property) khoảng [bao nhiêu](phone_property_value) giờ là hết pin vậy?
+- Cho em hỏi chuẩn [chống nước](phone_property) của [Huawei P30 Pro](phone_name) là gì ạ?
+- [Kích thước](phone_property) của [Samsung Galaxy S10](phone_name) là bao nhiêu?
+- [Samsung Galaxy S10](phone_name) [4G](phone_property) LTE cat bao nhiêu ạ?
+- Mua điện thoại [OPPO Reno 10x Zoom](phone_name) có [khuyến mãi](phone_property) gì ko?
+- Cho em hỏi [iPhone Xr](phone_name) mấy [sim](phone_property) vậy ạ?
+- Cho em hỏi Pin của [iPhone 7 Plus](phone_name) [chơi game](phone_property) [bao lâu](phone_property_value) ạ?
+- Cho em hỏi chính sách [bảo hành](phone_property) sản phẩm [OPPO Reno](phone_name) này ạ?
+- Cho mình hỏi mua [BlackBerry KEY2 LE](phone_name) khuyến mại đồng hồ gì vậy ạ?
+- [OPPO Reno2 F](phone_name) [bao lâu](phone_property_value) thì hết [pin](phone_property) ạ
+- Cho hỏi máy [Realme XT](phone_name) này của [hãng](phone_property) nào vậy ad?
+- Cho mình hỏi [BlackBerry KEYone](phone_name) có mấy [sim](phone_property) vậy?
+- Cho hỏi [ram](phone_property) khả dụng của máy [Realme 5 Pro](phone_name) là bao nhiêu ạ?
+- Cho em hỏi điện thoại [BlackBerry KEYone](phone_name) chạy [android](phone_property) mậy vậy?
+- Cho em hỏi [BlackBerry Evolve](phone_name) mấy [sim](phone_property) vậy ạ?
+- Cho mình hỏi [Huawei Y9 Prime](phone_name) xài [kính cảm ứng](phone_property) gì vậy?
+- Cho em hỏi máy [Xiaomi Redmi Note 8 Pro](phone_name) xài [chất liệu](phone_property) khung gì ạ?
+- Mua trả góp [Realme 3 Pro](phone_name) [giá](phone_property) bao nhiêu ạ
+- ad cho mình hỏi [pin](phone_property) ổn định của [Huawei Nova 3i](phone_name) là dùng đc [bao lâu](phone_property_value) ?
+- Cho mình hỏi điện thoại [Samsung Galaxy A30](phone_name) hỗ trợ [4G](phone_property) LTE cat mấy ạ?
+- [Samsung Galaxy A20s](phone_name) phiên bản 64G có sạc nhanh. Vậy [sạc](phone_property) trong [bao lâu](phone_property_value) thì đầy pin
+- [Ram](phone_property) trống [OPPO A5](phone_name) còn bao nhiêu ạ
+- Cần những thu tục và [giấy tờ](phone_property) gì để mua đc [Vivo Y17](phone_name) ạ
+- Máy Realme 5 [sạc](phone_property) [mấy tiếng](phone_property_value) mới đầy ạ
+- [Tỉ lệ của màn hình](phone_property) [Realme 3](phone_name) là bao nhiêu
+- Máy [Vivo Y12](phone_name) nếu dùng 3g lướt facebook với xem youtube thì [bao nhiêu](phone_property_value) tiếng hết [pin](phone_property) ạ?
+- Máy [Itel S15 Pro](phone_name) này [sạc](phone_property) [bao lâu](phone_property_value)
+- [Nokia 2720 Flip](phone_name) này có mấy [màu](phone_property) vậy bạn?
+- Dung luong [pin](phone_property) cua dien thoai [Mobell S61](phone_name) nay la bao nhieu vậy chi
+- [Realme C2](phone_name) bao nhiêu [tiền](phone_property) ạ
+- [Nokia 110](phone_name) Danh bạ [bao nhiêu](phone_property_value) số ạ
+- Em muốn mua [Samsung Galaxy A50s](phone_name) .[trả góp](phone_property) thì dk ntn ạ
+- Mua [OPPO Find X2](phone_name) có được [tặng quà](phone_property) gì không
+- Cho hoi la [Samsung Galaxy A30](phone_name) [sạc](phone_property) [bao lâu](phone_property_value) mới đầy pin hả?
+- cho em hỏi điện thoại [samsung galaxy a80](phone_name) [hãng](phone_property) gì ạ
+- Mua [oppo reno3 pro](phone_name) có được [tặng quà](phone_property) gì không
+- Mấy anh cho em hỏi máy [Samsung Galaxy A30](phone_name) [sạc](phone_property) pin [bao lâu](phone_property_value) mới đây
+- Con [vivo u10](phone_name) này có những [tính năng](phone_property) gì vậy ạ
+- Cho em hỏi [giá](phone_property) [huawei y9s](phone_name) bây giờ bao nhiêu ạ
+- Cho em hỏi [giá](phone_property) [huawei y6p](phone_name) bây giờ là bao nhiu ạ
+- Cho tôi hỏi đt [mobell s61](phone_name) [ram](phone_property) trống là bao nhiêu GB
+- Cho em hỏi là [Samsung Galaxy A11](phone_name) [sạc](phone_property) pin trong [bao lâu](phone_property_value) thì đầy ạ
+- [Itel S15](phone_name) [nặng](phone_property) bao nhiêu gram vậy ad.
+
+## intent:ask_yes_no
+- Cho em hỏi [Huawei P30](phone_name) có [chống nước](phone_property) không?
+- Cho em hỏi máy [Samsung Galaxy A30s](phone_name) này có tính năng [always on display](phone_property) không?
+- Ad cho e hỏi là [iPhone 11 Pro](phone_name) có 2 [sim](phone_property) ko ạ?
+- Cho mình hỏi [iPhone Xs]{"entity": "phone_name", "value": "iPhone Xs 64GB"} này 2 [sim](phone_property) phải k ạ
+- Cho hỏi bên mình [còn hàng](phone_property) [Realme C3](phone_name) không?
+- Cho hỏi bên mình [có hàng](phone_property) [Realme C3](phone_name) không?
+- [Samsung Galaxy S20](phone_name) có tính năng [sạc cho thiết bị khác](phone_property) ko
+- Máy [Samsung Galaxy Note 10 Lite](phone_name) có chức năng [khóa ứng dụng](phone_property) k vậy qtv
+- Sản phẩm [OPPO Reno2](phone_name) này [chơi game](phone_property) [mượt](phone_property_value) ko?
+- [OPPO Reno2](phone_name) [chống nước](phone_property) được ko vậy?
+- Cho mình hỏi máy [Samsung Galaxy A01](phone_name) có [mở khoá](phone_property) bằng [vân tay](phone_property_value) không?
+- Máy [Vivo S1 Pro](phone_name) có [chống nước](phone_property) không ạ ?
+- Máy [Samsung Galaxy A50](phone_name) này có [chống rung](phone_property) bằng phần mềm không?
+- Cho em hỏi [BlackBerry KEYone](phone_name) có [gọi hình ảnh](phone_property) không?
+- Máy [BlackBerry KEYone](phone_name) có [ghi âm](phone_property) đc cuộc gọi không vậy ?
+- Máy [Samsung Galaxy A50](phone_name) kết nối được với [usb](phone_property) không shop?
+- Cho em hỏi [OPPO Find X2](phone_name) có tính năng [chặn tin nhắn](phone_property) không a?
+- Ad cho em hỏi [Xiaomi Mi 9 SE](phone_name) có [nhân đôi ứng dụng](phone_property) như facebook zalo không ạ?
+- Sản phẩm [Itel S15 Pro](phone_name) có hỗ trợ [trả góp](phone_property) ko ạ
+- Cho em hỏi [iPhone 8 Plus](phone_name) [có hàng](phone_property) không vậy ad?
+- Máy [OPPO Reno2 F](phone_name) này có [nhân bản ứng dụng](phone_property) đúng k ạ ?
+- Cho e hỏi là [Samsung Galaxy A50s](phone_name) có hỗ trợ [ARCore](phone_property) của google không ạ?
+- [OPPO A9](phone_name) có [ứng dụng](phone_property) [tải phim nhanh](phone_property_value) không?
+- Máy [Realme 5 Pro](phone_name) xài 2 [sim](phone_property) 1 thẻ cùng lúc được không ?
+- Máy [Realme 5 Pro](phone_name) xài 1 [sim](phone_property) 1 thẻ cùng lúc được không ?
+- Máy [Samsung Galaxy A50s](phone_name) xài 1 [sim](phone_property) 1 thẻ cùng lúc được không ?
+- Máy [iPhone 7 Plus](phone_name) xài 1 [sim](phone_property) 1 thẻ cùng lúc được không ?
+- Máy [iPhone 8 Plus](phone_name) xài 1 [sim](phone_property) 1 thẻ cùng lúc được không ?
+- Máy [Huawei Nova 3i](phone_name) kết nối được [wifi](phone_property) [5ghz](phone_property_value) không vậy qtv?
+- Cho em hỏi [iPhone Xs]{"entity": "phone_name", "value": "iPhone Xs 64GB"} đây là hàng [mới](phone_property_value) hay cũ vậy?
+- Máy [Samsung Galaxy A20](phone_name) khi mua mới có [nguyên seal](phone_property) không ạ?
+- Cho mình hỏi [Vivo Y17](phone_name) cập nhật [android 9](phone_property) được không ad?
+- Cho mình hỏi máy [Vsmart Active 3](phone_name) có [lọc ánh sáng xanh](phone_property) không?
+
+- Cho em hỏi [Vsmart Joy 3](phone_name) có [mở khóa](phone_property) bằng [khuôn mặt](phone_property_value) không?
+- Điện thoại [Xiaomi Redmi 8A](phone_name) này hổ trợ [chiếu màn hình lên tivi](phone_property) ko ạ?
+- Cho mình hỏi máy [Huawei Y7 Pro](phone_name) này [thân liền](phone_property) không tháo được ạ?
+- Cho em hỏi máy [Xiaomi Redmi 8](phone_name) này [chơi game](phone_property) [tốt](phone_property_value) ko vậy ad?
+- Cho em hỏi máy [Huawei Y7 Pro](phone_name) này [chơi game](phone_property) [tốt](phone_property_value) ko vậy ad?
+- Cho em hỏi máy [Vivo Y17](phone_name) này [chơi game](phone_property) [tốt](phone_property_value) ko vậy ad?
+- Cho em hỏi máy [Vivo Y17](phone_name) này [chơi game](phone_property) [tốt](phone_property_value) không vậy ad?
+- Cho em hỏi mua [Vsmart Live](phone_name) có đươc [trả góp](phone_property) ko ạ
+- Cho em hỏi cục sạc theo máy [iPhone 11](phone_name) có hỗ trợ [sạc nhanh](phone_property) không ạ?
+- Kỹ thuật cho hỏi [OPPO Reno2 F](phone_name) có chức năng [GPS](phone_property) không
+- Máy [OPPO Reno2 F](phone_name) này có [nhân bản ứng dụng](phone_property) đúng k ạ ?
+- Máy [Samsung Galaxy A30s](phone_name) có hỗ trợ [quay phim màn hình](phone_property) k shop"
+- Cho em hỏi máy [Xiaomi Redmi 8](phone_name) này [chơi game](phone_property) [tốt](phone_property_value) ko vậy ad?
+- Cho em hỏi [OPPO Reno](phone_name) còn [màu hồng](phone_property) không ad ?
+- [OPPO Reno](phone_name) [chống nước](phone_property) được ko vậy?
+- Có [màu trắng](phone_property) cho [iPhone 7](phone_name) không?
+- Máy [Vivo V17 Pro](phone_name) có [chống nước](phone_property) không ạ ?
+- Máy [OPPO Reno2 F](phone_name) có [chống nước](phone_property) không ạ?
+- Máy [Samsung Galaxy A7](phone_name) có chức năng [sạc không dây](phone_property) không nhỉ?
+- Cho em hỏi [BlackBerry KEYone](phone_name) có [gọi hình ảnh](phone_property) không?
+- Ad cho em hỏi [OPPO F11](phone_name) có [nhân đôi ứng dụng](phone_property) như facebook zalo không ạ?
+- Cho e hỏi là [Samsung Galaxy A50s](phone_name) có hỗ trợ [ARCore](phone_property) của google không ạ
+- [OPPO A9](phone_name) có [ứng dụng](phone_property) [tải phim nhanh](phone_property_value) không?
+- Máy [Realme 5 Pro](phone_name) xài 2 [sim](phone_property) 1 thẻ cùng lúc được không ?
+- Điện thoại [BlackBerry KEYone](phone_name) [hàng mỹ](phone_property) hả ad?
+- Cho mình hỏi [Nokia 7.2](phone_name) có [ghi âm](phone_property) cuộc gọi không ạ?
+- [Realme 5 Pro](phone_name) chơi [honkai impact 3](phone_property) [mượt](phone_property_value) không ạ ?
+- Cho em hỏi [Xiaomi Redmi Note 8](phone_name) có [ghi màn hình](phone_property) như iPhone được không Ad
+- Cho hoi máy [OPPO A5](phone_name) có [sạc nhanh](phone_property) không ạ?
+- Máy [OPPO A5](phone_name) này có [chống nước](phone_property) không ạ?
+- Bên TGDĐ mình còn phiên bản [màu xanh phỉ thuý](phone_property) của [OPPO F9](phone_name) không vậy?
+- Máy [Vivo Y17](phone_name) kết nối được [wifi](phone_property) [5ghz](phone_property_value) không qtv
+- [Vivo Y17](phone_name) này có thể chơi [honkai impact 3](phone_property) ở [cấu hình](phone_property_value) nào là ko giật lag ạ?
+- Máy [Vivo Y17](phone_name) chơi [pubg](phone_property) có hay [lag](phone_property_value) hông ạ
+- Máy [Samsung Galaxy A20](phone_name) khi mua mới có [nguyên seal](phone_property) nguyên tem k ạ
+- Điện thoại [Realme 3](phone_name) [chơi game](phone_property) [mượt](phone_property_value) không ạ?
+- [Vivo V11i](phone_name) cập nhật [android 9](phone_property_value) được không add
+- Cho em hỏi mua [Vsmart Live](phone_name) có đươc [trả góp](phone_property) ko ạ
+- điện thoại [Vivo Y12](phone_name) này có [màu xanh](phone_property) ko ạ ??
+- Cho mình hỏi máy [Vsmart Live](phone_name) có [lọc ánh sáng xanh](phone_property) không?
+- Cho em hỏi [Vsmart Live](phone_name) có [mở khóa](phone_property) bằng [khuôn mặt](phone_property_value) không?
+- Điện thoại [Vsmart Live](phone_name) này hổ trợ [chiếu màn hình lên tivi](phone_property) ko ạ?
+- Máy [Huawei Y7 Pro](phone_name) này [thân liền](phone_property) không tháo được ạ?
+- Máy [Huawei Y7 Pro](phone_name) này chơi [pubg](phone_property) [đồ họa trung bình cao](phone_property_value) được k
+- Con [Nokia 5.1 Plus](phone_name) [chơi game](phone_property) [ổn](phone_property_value) k a?
+- Máy [Nokia 3.2](phone_name) 32GB này có lên được [android 10](phone_property) không?
+- em muốn [Xiaomi Redmi 8A](phone_name) để [nguyên seal](phone_property) có không ạ?
+- Máy [Xiaomi Redmi 8A](phone_name) cài sẵn [tiếng Việt](phone_property) ko ạ
+- Điện thoại [Realme C2](phone_name) có chức năng [la bàn](phone_property) không?
+- Điện thoại [Realme C2](phone_name) chơi [free fire](phone_property) [max setting](phone_property_value) ổn k ạ
+- Máy [Itel S15 Pro](phone_name) này ko [chơi game](phone_property) thì dùng có [lag](phone_property_value) ko
+- [Itel S15 Pro](phone_name) có chơi được [pubg](phone_property) ko ạ?
+- [Itel S15 Pro](phone_name) chơi đc [free fire](phone_property) ko
+- sạc [Vsmart Star](phone_name) có [bảo hành](phone_property) không ad
+- cho em hỏi máy [Nokia 2720 Flip](phone_name) có chức năng tự động [ghi âm](phone_property) cuộc gọi đến và đi khg ạ cảm ơn
+- Máy [Xiaomi Redmi Go](phone_name) chơi Free Fire [cấu hình thấp](phone_property_value) đc ko ạ
+- Máy [Mobell S61](phone_name) có chơi [free fire](phone_property) được ko
+- Máy [Mobell Nova P3](phone_name) này chơi dc [liên quân](phone_property) k vậy
+- [Itel P15](phone_name) có [sạc nhanh](phone_property) k shop
+- Máy [Mobell S51](phone_name) này [nặng](phone_property) gần 300g cơ ạ
+- [Mobell S51](phone_name) chơi [liên quân](phone_property) được không ạ
+- máy [Mobell S51](phone_name) này [cảm ứng mượt](phone_property_value) mà không ạ
+- Điện thoại [Masstel X5 Fami](phone_name) này có tự động [ghi âm](phone_property) cuộc gọi không.cảm ơn
+- Máy [Masstel X5 Fami](phone_name) này [chơi game](phone_property) được không
+- [Masstel X5 Fami](phone_name) chơi [liên quân](phone_property) [cấu hình thấp](phone_property_value) dc ko ah
+- Sản phẩm [Masstel X5 Fami](phone_name) này được [bảo hành](phone_property) tại các chi nhánh của Thế giới di động phải không ạ?
+- Điện thoại [Coolpad N3C](phone_name) này chơi thử game [free fire](phone_property) [cấu hình](phone_property_value) thật được không vậy shop
+- Máy [Coolpad N3C](phone_name) này có [chặn tin nhắn](phone_property) và chặn cuộc gọi ko
+- Máy [Nokia 230](phone_name) này dùng đk [zalo](phone_property) ko nhỉ
+- Điện thoại [Itel Alpha Lite](phone_name) này chơi được [bigo live](phone_property) ko ban
+- Điện thoại [Itel Alpha Lite](phone_name) chơi được bigo ko
+- [Mobell Rock 3](phone_name) có [chống nước](phone_property) kg v ạ
+- [Nokia 130](phone_name) [màu xám](phone_property) còn ko vậy shop?
+- Mua máy [Nokia 130](phone_name) có kèm [thẻ nhớ](phone_property) không ?
+- Có máy [Nokia 130](phone_name) 1 [sim](phone_property) không vậy ad
+- [Nokia 110](phone_name) có [màu đỏ](phone_property) kog shop
+- Máy [Nokia 110](phone_name) này chạy [hệ điều hành](phone_property) Kaios phải ko?
+- May Mobell M889 nay xài dc [sim](phone_property) nano ko
+- Máy Mobell M889 này có [chống ồn](phone_property) không?
+- máy [Nokia 106](phone_name) này có tích hợp sẵn chức năng [ghi âm](phone_property) cuộc gọi k QTV?
+- Dạ cho hỏi Itel it5092 có [ghi âm](phone_property) cuộc gọi ko ạ
+- MOBELL M389 Có [ghi âm](phone_property) cuộc gọi ko ạ
+- [Masstel IZI 280](phone_name) có [màu đen](phone_property) kg shop
+
+## intent:ask_compare
+- Giúp em so sánh [Realme 5 Pro]{"entity": "phone_name", "role": "first"} vs [Realme 6]{"entity": "phone_name", "role": "second"} với ạ
+- [Vivo Y11]{"entity": "phone_name", "role": "first"} với [Xiaomi Redmi 8]{"entity": "phone_name", "role": "second"} con nào hơn ạ
+- [Vivo Y11]{"entity": "phone_name", "role": "first"} này với [Samsung Galaxy A10s]{"entity": "phone_name", "role": "second"} cái nào tốt hơn
+- [Realme C2]{"entity": "phone_name", "role": "first"} với [Vivo Y11]{"entity": "phone_name", "role": "second"} cái nào tốt hơn ạ
+- em đang phân vân là không biết nên mua con [Samsung Note 10 Lite]{"entity": "phone_name", "role": "first"} này hay mua con [iPhone 8 Plus]{"entity": "phone_name", "role": "second"} vì em thì thích SS còn bạn gái em thì thích IP, anh.chị tư vấn giúp em vs ạ, Nếu hợp lí thì em mua cả 2 luôn.
+- Cho em hỏi [cấu hình](phone_property) của [iPhone 11]{"entity": "phone_name", "role": "first"} và [iPhone Xs Max]{"entity": "phone_name", "role": "second"}
+- Cho mình hỏi [chip](phone_property) của máy [iPhone 11]{"entity": "phone_name", "role": "first"} và [chip](phone_property) của máy [Samsung Galaxy Note 10 Lite]{"entity": "phone_name", "role": "second"} thì máy nào có hiệu năng mạnh hơn
+- Máy [iPhone 11 Pro Max]{"entity": "phone_name", "role": "first"} này với [iPhone Xs Max]{"entity": "phone_name", "role": "second"} máy nào [chụp ảnh](phone_property) đẹp hơn
+- Giữa [Samsung Galaxy A51]{"entity": "phone_name", "role": "first"} với [Samsung Galaxy A50s]{"entity": "phone_name", "role": "second"} thì cái nào tốt hơn nhỉ
+- [Realme 5]{"entity": "phone_name", "role": "first"} với [Xiaomi Redmi Note 8]{"entity": "phone_name", "role": "second"} cái nào nhỉnh hơn ạ
+- [Samsung Galaxy A30s]{"entity": "phone_name", "role": "first"} và [Samsung Galaxy A20s]{"entity": "phone_name", "role": "second"} vậy nên chọn máy nào
+- [Xiaomi Redmi 8]{"entity": "phone_name", "role": "first"} với [Xiaomi Redmi 7]{"entity": "phone_name", "role": "second"} con nào [chơi game](phone_property) ngon hơn?
+- [Xiaomi Redmi 8]{"entity": "phone_name", "role": "first"} với con [Samsung Galaxy A10s]{"entity": "phone_name", "role": "second"} con nào chơi [liên quân](phone_property) tốt hơn ạ?
+- [Samsung Galaxy A51]{"entity": "phone_name", "role": "first"} với [BlackBerry KEYone]{"entity": "phone_name", "role": "second"} cái nào [chơi game](phone_property) xem phim mượt hơn vậy
+- [Huawei P30 Lite]{"entity": "phone_name", "role": "first"} và [Xiaomi Note 8 Pro]{"entity": "phone_name", "role": "second"} cái nào đẹp và dùng tốt hơn ạ, xin Qtv cho mình xin cái so sánh
+- [Xiaomi Redmi Note 8 Pro]{"entity": "phone_name", "role": "first"} với cái [Xiaomi Mi 9 SE]{"entity": "phone_name", "role": "second"} cái nào [chơi game](phone_property) lướt web mượt hơn vậy
+- Máy [Realme 6 Pro]{"entity": "phone_name", "role": "first"} và [Realme 5 Pro]{"entity": "phone_name", "role": "second"} cái nào [chơi game](phone_property) ngon hơn
+- [OPPO A7]{"entity": "phone_name", "role": "first"} vs [OPPO A5s]{"entity": "phone_name", "role": "second"} chip nào [chơi game](phone_property) mượt hơn ạ
+- [OPPO A5s]{"entity": "phone_name", "role": "first"} và [Samsung Galaxy A30s]{"entity": "phone_name", "role": "second"} chip nào [chơi game](phone_property) mượt ạ
+- [OPPO A5s]{"entity": "phone_name", "role": "first"} với [Vivo Y12]{"entity": "phone_name", "role": "second"} nào ngon hơn anh
+- [Xiaomi Redmi 7]{"entity": "phone_name", "role": "first"} với [Realme 5]{"entity": "phone_name", "role": "second"} thì con nào chiến [game](phone_property) ngon hơn ạ
+- [OPPO A1K]{"entity": "phone_name", "role": "first"} so với [Vivo Y19]{"entity": "phone_name", "role": "second"} thì cái nào [chơi game](phone_property) khỏe hơn
+- [OPPO A1K]{"entity": "phone_name", "role": "first"} này [chơi game](phone_property) khỏe hơn [OPPO A31]{"entity": "phone_name", "role": "second"} ko ạ
+- Cho em hỏi [cấu hình](phone_property) của [iPhone 8 Plus]{"entity": "phone_name", "role": "first"} so với [iPhone SE]{"entity": "phone_name", "role": "second"} với ạ
+- Cho em hỏi [cấu hình](phone_property) của [iPhone 8 Plus]{"entity": "phone_name", "role": "first"} và [iPhone 7 Plus]{"entity": "phone_name", "role": "second"} với ạ
+- [Samsung Galaxy Note 10 Lite]{"entity": "phone_name", "role": "first"} tốt hơn [iPhone Xs Max]{"entity": "phone_name", "role": "second"} về hiệu năng và [chụp ảnh](phone_property) phải k
+- [Samsung Galaxy A50s]{"entity": "phone_name", "role": "first"} với [Samsung Galaxy A51]{"entity": "phone_name", "role": "second"} nên chọn máy nào vậy admin
+- Cho mình hỏi [chip](phone_property) của máy [iPhone 11]{"entity": "phone_name", "role": "first"} và [chip](phone_property) của máy [OPPO Find X]{"entity": "phone_name", "role": "second"} thì máy nào có hiệu năng mạnh hơn
+- Cho mình hỏi giữa con [oppo a9]{"entity": "phone_name", "role": "first"} và [Samsung Galaxy A70]{"entity": "phone_name", "role": "second"} thì con nào chơi [liên quân](phone_property) mượt max setting mượt hơn vậy
+- [Chip](phone_property) p60 trên [oppo reno3]{"entity": "phone_name", "role": "first"} và [chip](phone_property) p70 trên [ViVo V19 Neo]{"entity": "phone_name", "role": "second"} thì con nào mạnh hơn ạ
+- Cho em hỏi là cái [nokia 5.3]{"entity": "phone_name", "role": "first"} với cái [vsmart active 3]{"entity": "phone_name", "role": "second"} máy nào chơi tốt hơn vậy
+- Giữa [oppo a5]{"entity": "phone_name", "role": "first"} với [realme 5 pro]{"entity": "phone_name", "role": "second"} cái nào sẽ [chiến game](phone_property) tốt hơn ạ?
+- Cho em hỏi [realme 6 pro]{"entity": "phone_name", "role": "first"} với [Samsung Galaxy A30s]{"entity": "phone_name", "role": "second"} cái nào mạnh hơn về [chơi game](phone_property) với bin trâu ạ
+- Giữa [Xiaomi Redmi Note 8 Pro]{"entity": "phone_name", "role": "first"} và [Realme 5s]{"entity": "phone_name", "role": "second"} này cái nào sẽ tốt hơn và [giá](phone_property) tiền hợp lý hơn
+- Con [Realme 6]{"entity": "phone_name", "role": "first"} với [Huawei P30 Lite]{"entity": "phone_name", "role": "second"} con nào tốt hơn về chụp hình [chơi game](phone_property)
+- Đt [Oppo A92]{"entity": "phone_name", "role": "first"} với đt [OPPO A52]{"entity": "phone_name", "role": "second"} [cấu hình](phone_property) máy nào mạnh hơn vậy
+- Máy [Samsung Galaxy A80]{"entity": "phone_name", "role": "first"} này với [iphone 8 plus]{"entity": "phone_name", "role": "second"} cái nào hơn nhỉ
+- [Samsung Galaxy A50]{"entity": "phone_name", "role": "first"} vs [OPPO Reno2 F]{"entity": "phone_name", "role": "second"} con nào tốt hơn
+- [Samsung Galaxy A21s]{"entity": "phone_name", "role": "first"} với [Samsung Galaxy A30s]{"entity": "phone_name", "role": "second"} máy nào [chụp hình](phone_property) đẹp hơn vậy anh chị?
+- Cho em hỏi [Realme 6 Pro]{"entity": "phone_name", "role": "first"} với [Xiaomi Redmi Note 9 Pro]{"entity": "phone_name", "role": "second"} cái nào mạnh hơn về [chơi game](phone_property) với bin trâu ạ
+- [Xiaomi Note 10 Pro]{"entity": "phone_name", "role": "first"} này so với [iPhone Xs]{"entity": "phone_name", "role": "second"} thì máy nào ngon hơn
+- cho hỏi con [Xiaomi Redmi Note 9s]{"entity": "phone_name", "role": "first"} vs [Realme 6]{"entity": "phone_name", "role": "second"} con nào chơi [liên quân](phone_property) ngon hơn
+- [Xiaomi Redmi 8a]{"entity": "phone_name", "role": "first"} so với [Realme 5i]{"entity": "phone_name", "role": "second"} thì con [chip](phone_property) nào mạnh hơn ạ
+- Cho hỏi con [OPPO A31]{"entity": "phone_name", "role": "first"} với [Samsung Galaxy A21s]{"entity": "phone_name", "role": "second"} thì con nào [chơi game](phone_property) mượt hơn
+- Máy [OPPO A31]{"entity": "phone_name", "role": "first"} với [OPPO A5]{"entity": "phone_name", "role": "second"} máy nào [chơi game](phone_property) tốt hơn ạ
+- [Realme C3]{"entity": "phone_name", "role": "first"} voi [Samsung Galaxy A20s]{"entity": "phone_name", "role": "second"} con nao [chơi game](phone_property) tot hon vay ad...
+- máy [OPPO A12]{"entity": "phone_name", "role": "first"} với [Vivo U10]{"entity": "phone_name", "role": "second"} thì cái nào [chơi game](phone_property) tốt hơn vậy
+- [Vivo Y30]{"entity": "phone_name", "role": "first"} với đien thoại [OPPO A31]{"entity": "phone_name", "role": "second"} thì cái nào ngon hơn vậy
+- Tôi Đang phân vân giữa chiếc điện thoại [Nokia 2.3]{"entity": "phone_name", "role": "first"} vs [Nokia 3.2]{"entity": "phone_name", "role": "second"} k biết chọn con nào
+- [CPU](phone_property) của [Nokia 5.3]{"entity": "phone_name", "role": "first"} với [Samsung Galaxy A11]{"entity": "phone_name", "role": "second"} con nào mạnh hơn vậy?
+- Con [Vsmart Active 3]{"entity": "phone_name", "role": "first"} voi [Realme 5i]{"entity": "phone_name", "role": "second"} con nào ngon hơn khi chơi [liên quân](phone_property) vậy
+- Con [Vsmart Joy 3]{"entity": "phone_name", "role": "first"} này vs [Vsmart Star 4]{"entity": "phone_name", "role": "second"} thì con nào [chơi game](phone_property) nhĩnh hơn
+- Qtv cho e hỏi là con [chip](phone_property) [OPPO A1K]{"entity": "phone_name", "role": "first"} với con [chip](phone_property) [Vivo Y91c]{"entity": "phone_name", "role": "second"} thì như thế nào z ạ
+- [Xiaomi Redmi 8A]{"entity": "phone_name", "role": "first"} với [Realme C3]{"entity": "phone_name", "role": "second"} con nào tốt hơn để [chơi game](phone_property) ạ
+
+
+
+## intent:inform
+- Tôi muốn hỏi thông tin của điện thoại
+- Tôi muốn hỏi thông tin điện thoại
+- Cho em hỏi [iPhone 11](phone_name)
+- Tôi muốn hỏi thông tin [iPhone 11](phone_name)
+- Cho em hỏi [iPhone 11](phone_name)
+- Tôi muốn hỏi thông tin [iPhone 11](phone_name)
+- Tôi muốn hỏi thông tin [OPPO Reno2 F](phone_name)
+- Tôi muốn hỏi thông tin [Samsung Galaxy A30s](phone_name)
+- Tôi muốn hỏi thông tin [iPhone 8 Plus](phone_name)
+- Tôi muốn hỏi thông tin [Samsung Galaxy A50s](phone_name)
+- Tôi muốn hỏi thông tin [Samsung Galaxy Note 10 Lite](phone_name)
+- Tôi muốn hỏi thông tin [iPhone 11 Pro Max](phone_name)
+- Tôi muốn hỏi thông tin [OPPO Find X2](phone_name)
+- Tôi muốn hỏi thông tin [BlackBerry KEYone](phone_name)
+- Tôi muốn hỏi thông tin [Realme 5 Pro](phone_name)
+- Tôi muốn hỏi thông tin [Huawei Nova 3i](phone_name)
+- Tôi muốn hỏi thông tin [Samsung Galaxy A20](phone_name)
+- Tôi muốn hỏi thông tin [Samsung Galaxy A01](phone_name)
+- Tôi muốn hỏi thông tin [Huawei Y7 Pro](phone_name)
+- Tôi muốn hỏi thông tin [Vivo Y17](phone_name)
+- Cho em hỏi về máy [Xiaomi Redmi 8](phone_name)
+- Cho hỏi máy [Samsung Galaxy A51](phone_name)
+- Cho tôi hỏi máy này [ram](phone_property) bao nhiêu?
+- Cho tôi hỏi máy này [bộ nhớ trong](phone_property) bao nhiêu?
+- Cho tôi hỏi [giá](phone_property) máy là bao nhiêu?
+- Cho em hỏi máy này có [chống nước](phone_property) không?
+- Cho em hỏi máy này có [nhân bản ứng dụng](phone_property) không? 
+- Cho em hỏi máy này có [trả góp](phone_property) không ạ?
+- Cho em hỏi máy này có mấy [sim](phone_property) vậy?
+- Cho mình hỏi máy này có [ghi âm](phone_property) cuộc gọi không ạ?
+- Cho em hỏi máy có [gọi hình ảnh](phone_property) không?
+- Máy có [chống nước](phone_property) không ạ ?
+- Máy này có [nhân bản ứng dụng](phone_property) đúng k ạ ?
+- Kỹ thuật cho hỏi máy có chức năng [GPS](phone_property) không
+- Cho em hỏi máy này có hỗ trợ [sạc nhanh](phone_property) không ạ?
+- Cho em hỏi máy này [chơi game](phone_property) [tốt](phone_property_value) không vậy ad?
+- Cho em hỏi chính sách [bảo hành](phone_property) với ạ?
+- Cho em hỏi [camera trước](phone_property) bao nhiêu mp vậy ạ?
+- Cho em hỏi [camera sau](phone_property) bao nhiêu mp vậy ạ?
+- Cho em hỏi là máy [chụp ảnh](phone_property) rõ nét ko ạ?
+- [Độ phân giải màn hình](phone_property) là bao nhiêu?
+- Cho em hỏi điện thoại này chạy [android](phone_property) mậy vậy?
+- Máy có tính năng [chặn tin nhắn](phone_property) không vậy ad?
+- Đc [bảo hành](phone_property) mấy tháng vậy ạ
+- Máy có hỗ trợ [chống nước](phone_property) j ko?
+- Cho hỏi sp này có [chống nước](phone_property) không ạ
+- [Loại pin](phone_property) máy này là gi?
+- Cho e hỏi máy này [nặng](phone_property) bao nhiu ạ
+- [Pin](phone_property) onl liên tục [bao lâu](phone_property_value)
+- Máy này mấy [sim](phone_property) vậy
+- [Giá](phone_property) bao nhiêu hiện tại vậy anh?
+- Mua trực tiếp tại cửa hàng có [giảm giá](phone_property) hay quà tặng gì k?
+- Có đc [ưu đãi](phone_property) gì khi mua ở cửa hàng k ạ
+- Máy này có [khuyến mãi](phone_property) gì không
+- QTV cho hỏi Hệ Điều Hành Android cao nhất của máy này là [android](phone_property) mấy vậy?? 
+- [Sạc](phone_property) pin khoảng [mấy tiếng](phone_property_value) mới đầy vậy
+- Dạ cho e hỏi [pin](phone_property) này [xài](phone_property_value) tầm bao lâu ạ?
+- Máy có tính năng tự động [ghi âm](phone_property) cuộc gọi không ad?
+- [Bộ nhớ trong](phone_property) khả dụng còn bao nhiêu gb ạ?
+- Điện thoại này mấy [sim](phone_property) vậy ạ?
+- Máy này [sạc](phone_property) [bao lâu](phone_property_value) thì đầy vậy ad.?
+
+## intent:goodbye
+- bye
+- goodbye
+- see you around
+- see you later
+- tạm biệt
+- Bye bye
+- Tạm biệt bot
+
 ## intent:affirm
 - yes
-- yes sure
-- absolutely
-- for sure
-- yes yes yes
-- definitely
-- yeah
-- si
+- indeed
+- of course
+- that sounds good
+- correct
+- đúng vậy
+- đúng rồi
+- quá chính xác
+- chính xác
+- Oh, đúng rồi
+- dạ có
+- dạ
+- có
 - ok
-- okay
+- được
 
 ## intent:deny
 - no
-- not today
-- no thanks
-- no thank you
-- uh no
-- noope
-- do you have something else
-- no this does not work for me
+- never
+- not really
+- không
+- không đúng
+- tôi không nghĩ vậy
+- không bao giờ
+- thôi
+- được rồi
+
+
+## intent:thank
+- cảm ơn
+- cảm ơn rất nhiều
+- cảm ơn đã hỗ trợ
+- thank you
+- thanks
+- cảm ơn bot
 
 
 ## intent:out_of_scope
-- please help with my ice cream it's dripping
-- no wait go back i want a dripping ice cream but a cone that catches it so you can drink the ice cream later
-- i want a non dripping ice cream
-- someone call the police i think the bot died
-- show me a picture of a chicken
-- neither
-- I want french cuisine
-- i am hungry
-- restaurant
-- can i be shown a gluten free restaurant
-- i don't care!!!!
-- i do not care how are you
-- again?
-- oh wait i gave you my work email address can i change it?
-- hang on let me find it
-- stop it, i do not care!!!
-- how come?
-- I changed my mind
-- what?
-- did i break you
-- that link doesn't work!
-- you already have that
-- this is a really frustrating experience
-- no stop
-- give me food
-- i want food
-- Can I ask you questions first?
-- is it a wasteland full of broken robot parts?
-- can we keep chatting?
-- talk to me
-- who is your favourite robot?
-- can you help me to build a bot
-
-## intent:goodbye
-- Bye
-- Bye!
-- Goodbye
-- See you later
-- Bye bot
-- Goodbye friend
-- bye
-- bye for now
-- catch you later
-- gotta go
-- See you
-- goodnight
-- have a nice day
-- i'm off
-- see you later alligator
-- we'll speak soon
+- Cái gì?
+- Tôi muốn đặt đồ ăn
+- Tôi muốn mua laptop
+- Nói chuyện với t nhé
+- Tôi muốn hỏi về laptop
 
 
-## intent:greet
-- Hi
-- Hey
-- Hi bot
-- Hey bot
-- Hello
-- good morning
-- hi again
-- hi folks
-- hi Mister
-- hi pal!
-- hi there
-- greetings
-- hello everybody
-- hello is anybody there
-- hello robot
-- hi
 
-## intent:inform
-- [Sitka](location)
-- [Juneau](location)
-- [Virginia](location)
-- [Cusseta](location)
-- [Chicago](location)
-- [Tucson](location)
-- [Columbus](location)
-- [Valdez](location)
-- [Preston](location)
-- [Huntsville](location)
-- [Boulder](location)
-- [California](location)
-- [Tulsa](location)
-- [Colorado](location)
-- [Goodyear](location)
-- [Albuquerque](location)
-- [Scottsdale](location)
-- [Hibbing](location)
-- [Norman](location)
-- [San](location)
-- [Peoria](location)
-- [New](location)
-- [Corpus](location)
-- [Montgomery](location)
-- [Wichita](location)
-- [Aurora](location)
-- [Denver](location)
-- [Sierra](location)
-- [Georgetown](location)
-- [Birmingham](location)
-- [Fayetteville](location)
-- [Carson](location)
-- [Raleigh](location)
-- [Bakersfield](location)
-- [Mobile](location)
-- [Detroit](location)
-- [Bunnell](location)
-- [Chattanooga](location)
-- [Mesa](location)
-- [Fernley](location)
-- [Marana](location)
-- [Yuma](location)
-- [Little](location)
-- [Athens](location)
-- [Hartsville](location)
-- [Port](location)
-- [Tampa](location)
-- [Fresno](location)
-- [Unalaska](location)
-- [Eloy](location)
-- [Salt](location)
-- [Jackson](location)
-- [Fort](location)
-- [Casa](location)
-- [Charleston](location)
-- [Henderson](location)
-- [Durham](location)
-- [Abilene](location)
-- [Palmdale](location)
-- [Babbitt](location)
-- [Surprise](location)
-- [Cape](location)
-- [Shreveport](location)
-- [Rio](location)
-- [Savannah](location)
-- [Reno](location)
-- [Orlando](location)
-- [North](location)
-- [Tallahassee](location)
-- [Amarillo](location)
-- [St](location)
-- [Knoxville](location)
-- [Sacramento](location)
-- [Clarksville](location)
-- [Los Angeles](location)
-- [New York](location)
-- [Las Vegas](location)
-- [San Diego](location)
-- [San Antonio](location)
-- [El Paso](location)
-- [Kansas location](location)
-- [San Francisco](location)
-- [Santa Barbara](location)
-- [home health agency](facility_type)
-- [hospital](facility_type)
-- [nursing home](facility_type)
-- a [home health agency](facility_type)
-- a [hospital](facility_type)
-- a [nursing home](facility_type)
 
-## intent:search_provider
-- i need a [hospital](facility_type)
-- find me a nearby [hospital](facility_type)
-- show me [hospitals](facility_type)
-- [hospital](facility_type)
-- find me a nearby [hospital](facility_type) my zip code is [10119](location)
-- i need a [home health agency](facility_type)
-- find me a nearby [home health agency](facility_type)
-- show me [home health agency](facility_type)
-- [home health agency](facility_type)
-- find me a nearby [home health agency](facility_type) my zip code is [10119](location)
-- find me a nearby [nursing home](facility_type)
-- show me [nursing home](facility_type)
-- [nursing home](facility_type)
-- find me a nearby [nursing home](facility_type) my zip code is [10119](location)
-- i need a [hospital](facility_type) my zip code is [77494](location)
-- my zip code is [30277](location) and i need a [nursing home](facility_type)
-- my zip code is [86602](location) and i need a [hospital](facility_type)
-- my zip code is [47516](location) and i need a [home health agency](facility_type)
-- i need a [nursing home](facility_type) at [77474](location)
-- i need a [hospital](facility_type) at [77474](location)
-- i need a [home health agency](facility_type) at [77474](location)
-- i am in [Amarillo](location) and i need a [nursing home](facility_type)
-- i am in [New York](location) and i need a [hospital](facility_type)
-- i am in [Las Vegas](location) and i need a [home healt agency](facility_type)
-- i need a [nursing home](facility_type) in [Katy](location)
-- i need a [hospital](facility_type) in [Waco](location)
-- i need a [home health agency](facility_type) in [Clarksville](location)
-- show me [nursing home](facility_type) in [Knoxville](location)
-- show me [hospital](facility_type) in [Durham](location)
-- show me [home health agency](facility_type) in [Detroit](location)
-- find me a nearby [home health agency](facility_type) in [Reno](location)
-- hi i am in [Tampa](location) i need a [nursing  home](facility_type:b27b-2uc7)
-- hi i am in [San Diego](location) i need a [hospital](facility_type:xubh-q36u)
-- hi i am in [Nashville](location) i need a [home health agenc](facility_type:9wzi-peqs)
-- hi i am in [Sacramento](location) i need a [nursing  home](facility_type:b27b-2uc7)
-- hi i am in [Springfield](location) i need a [hospital](facility_type:xubh-q36u)
-- hi i am in [Atlanta](location) i need a [home health agenc](facility_type:9wzi-peqs)
-- hi i am in [Chicago](location) i need a [nursing  home](facility_type:b27b-2uc7)
-- hi i am in [Santa Cruz](location) i need a [hospital](facility_type:xubh-q36u)
-- hi i am in [Boston](location) i need a [home health agenc](facility_type:9wzi-peqs)
-- hello i am in [Tampa](location) i need a [nursing  home](facility_type:b27b-2uc7)
-- hello i am in [San Diego](location) i need a [hospital](facility_type:xubh-q36u)
-- hello i am in [Nashville](location) i need a [home health agenc](facility_type:9wzi-peqs)
-- hello i am in [Sacramento](location) i need a [nursing  home](facility_type:b27b-2uc7)
-- hello i am in [Springfield](location) i need a [hospital](facility_type:xubh-q36u)
-- hello i am in [Atlanta](location) i need a [home health agenc](facility_type:9wzi-peqs)
-- hello i am in [Chicago](location) i need a [nursing  home](facility_type:b27b-2uc7)
-- hello i am in [Santa Cruz](location) i need a [hospital](facility_type:xubh-q36u)
-- hello i am in [Boston](location) i need a [home health agenc](facility_type:9wzi-peqs)
-- Good morning i am in [Tampa](location) i need a [nursing  home](facility_type:b27b-2uc7)
-- Good morning i am in [San Diego](location) i need a [hospital](facility_type:xubh-q36u)
-- Good morning i am in [Nashville](location) i need a [home health agenc](facility_type:9wzi-peqs)
-- Good morning i am in [Sacramento](location) i need a [nursing  home](facility_type:b27b-2uc7)
-- Good morning i am in [Springfield](location) i need a [hospital](facility_type:xubh-q36u)
-- Good morning i am in [Atlanta](location) i need a [home health agenc](facility_type:9wzi-peqs)
-- Good morning i am in [Chicago](location) i need a [nursing  home](facility_type:b27b-2uc7)
-- Good morning i am in [Santa Cruz](location) i need a [hospital](facility_type:xubh-q36u)
-- Good morning i am in [Boston](location) i need a [home health agenc](facility_type:9wzi-peqs)
-- Hello again i need a [nursing home](facility_type) in [Katy](location)
-- Hello again i need a [hospital](facility_type) in [Waco](location)
-- Hello again i need a [home health agency](facility_type) in [Clarksville](location)
-- Good morning i need a [nursing home](facility_type) in [Katy](location)
-- Good morning i need a [hospital](facility_type) in [Waco](location)
-- Good morning i need a [home health agency](facility_type) in [Clarksville](location)
-- Can you tell me a [nursing home](facility_type) in [Oklahoma City](location) ?
-
-## intent:thanks
-- Thanks
-- Thank you
-- Thank you so much
-- Thanks bot
-- Thanks for that
-- cheers
-- cheers bro
-- ok thanks!
-- perfect thank you
-- thanks a bunch for everything
-- thanks for the help
-- thanks a lot
-- amazing, thanks
-- cool, thanks
-- cool thank you
-
-## intent:mood_great
-- perfect
-- very good
-- great
-- amazing
-- wonderful
-- I am feeling very good
-- I am great
-- I'm good
-
-## intent:mood_unhappy
-- sad
-- very sad
-- unhappy
-- bad
-- very bad
-- awful
-- terrible
-- not very good
-- extremely sad
-- so sad
-
-## regex:location
-- [0-9]{5}
-
-## synonym:xubh-q36u
-- hospital
-- hospitals
-
-## synonym:9wzi-peqs
-- home health agency
-- home health agencies
-
-## synonym:b27b-2uc7
-- nursing home
-- nursing homes
-
-##intent:zz
-- nghia
+## synonym:iPhone Xs 64GB
+- iPhone Xs

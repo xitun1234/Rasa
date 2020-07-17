@@ -1,243 +1,256 @@
-# This files contains your custom actions which can be used to run
-# custom Python code.
-#
-# See this guide on how to implement these action:
-# https://rasa.com/docs/rasa/core/actions/#custom-actions/
-
-
-# This is a simple example for a custom action which utters "Hello World!"
-
-# from typing import Any, Text, Dict, List
-#
-# from rasa_sdk import Action, Tracker
-# from rasa_sdk.executor import CollectingDispatcher
-#
-#
-# class ActionHelloWorld(Action):
-#
-#     def name(self) -> Text:
-#         return "action_hello_world"
-#
-#     def run(self, dispatcher: CollectingDispatcher,
-#             tracker: Tracker,
-#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-#
-#         dispatcher.utter_message(text="Hello World!")
-#
-#         return []
-
-
 from typing import Any, Text, Dict, List
 import requests
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
-from rasa_sdk.events import SlotSet
+from rasa_sdk.events import FollowupAction, AllSlotsReset, SlotSet
 from rasa_sdk.forms import FormAction
+from rasa_sdk.events import (EventType)
+import pymongo
+from pymongo import MongoClient
+import csv
+import sys
+import json
+import logging
 
-# ENDPOINT API CALL
-ENDPOINTS = {
-    "base": "https://data.medicare.gov/resource/{}.json",
-    "xubh-q36u": {
-        "city_query": "?city={}",
-        "zip_code_query": "?zip_code={}",
-        "id_query": "?provider_id={}"
-    },
-    "b27b-2uc7": {
-        "city_query": "?provider_city={}",
-        "zip_code_query": "?provider_zip_code={}",
-        "id_query": "?federal_provider_number={}"
-    },
-    "9wzi-peqs": {
-        "city_query": "?city={}",
-        "zip_code_query": "?zip={}",
-        "id_query": "?provider_number={}"
-    }
-}
-
-FACILITY_TYPES = {
-    "hospital":
-        {
-            "name": "hospital",
-            "resource": "xubh-q36u"
-        },
-    "nursing_home":
-        {
-            "name": "nursing home",
-            "resource": "b27b-2uc7"
-        },
-    "home_health":
-        {
-            "name": "home health agency",
-            "resource": "9wzi-peqs"
-        }
-}
+logger = logging.getLogger(__name__)
 
 
-def _create_path(base: Text, resource: Text, query: Text, values: Text) -> Text:
-    """Creates a path to find provider using the endpoints."""
+class AskWhatAction(Action):
 
-    if isinstance(values, list):
-        return (base+query).format(resource, ', '.join('"{0}"'.format(w) for w in values))
-    else:
-        return (base+query).format(resource, values)
-
-
-def _find_facilities(location: Text, resource: Text) -> List[Dict]:
-    """Returns json of facilities matching the search criteria."""
-
-    if str.isdigit(location):
-        full_path = _create_path(
-            ENDPOINTS["base"], resource, ENDPOINTS[resource]["zip_code_query"], location)
-    else:
-        full_path = _create_path(
-            ENDPOINTS["base"], resource, ENDPOINTS[resource]["city_query"], location.upper())
-
-    results = requests.get(full_path).json()
-
-    return results
-
-
-def _resolve_name(facility_types, resource) -> Text:
-    for key, value in facility_types.items():
-        if value.get("resource") == resource:
-            return value.get("name")
-    return ""
-
-class FindFacilityTypes(Action):
-    """This action class allows to display buttons for each facility type
-    for the user to chose from to fill the facility_type entity slot."""
-   
     def name(self) -> Text:
-        """Unique identifier of the action"""
+        return "action_answer_what"
 
-        return "find_facility_types"
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict]:
 
-    def run(self,
-            dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List:
-
-        buttons = []
-        for t in FACILITY_TYPES:
-            facility_type = FACILITY_TYPES[t]
-            payload = "/inform{\"facility_type\": \"" + facility_type.get(
-                "resource") + "\"}"
-
-            buttons.append(
-                {"title": "{}".format(facility_type.get("name").title()),
-                 "payload": payload})
-
-        # TODO: update rasa core version for configurable `button_type`
-        dispatcher.utter_button_template("utter_greet", buttons, tracker)
-        return []
-
-class FindHealthCareAddress(Action):
-    """This action class retrieves the address of the user's
-    healthcare facility choice to display it to the user."""
-    
-    def name(self) -> Text:
-        """Unique identifier of the action"""
-
-        return "find_healthcare_address"
-    
-    def run(self, dispatcher:CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict]:
+        # lấy các entities
+        phone_name = tracker.get_slot("phone_name")
+        phone_property = tracker.get_slot("phone_property")
+        phone_property_value = tracker.get_slot("phone_property_value")
         
-        facility_type = tracker.get_slot("facility_type")
-        location = tracker.get_slot("location")
-        healthcare_id = tracker.get_slot("facility_id")
-        full_path = _create_path(ENDPOINTS["base"], facility_type,
-                                 ENDPOINTS[facility_type]["id_query"],
-                                 healthcare_id)
-        results = requests.get(full_path).json()
-        if results:
-            selected = results[0]
-            if facility_type == FACILITY_TYPES["hospital"]["resource"]:
-                address = "{}, {}, {} {}".format(selected["address"].title(),
-                                                 selected["city"].title(),
-                                                 selected["state"].upper(),
-                                                 selected["zip_code"].title())
-            elif facility_type == FACILITY_TYPES["nursing_home"]["resource"]:
-                address = "{}, {}, {} {}".format(selected["provider_address"].title(),
-                                                 selected["provider_city"].title(),
-                                                 selected["provider_state"].upper(),
-                                                 selected["provider_zip_code"].title())
-            else:
-                address = "{}, {}, {} {}".format(selected["address"].title(),
-                                                 selected["city"].title(),
-                                                 selected["state"].upper(),
-                                                 selected["zip"].title())
-            
-            return [SlotSet("facility_address", address)]
+        dataPhone = {'PhoneName': phone_name, 'PhoneProperty': phone_property, 'PhonePropertyValue': phone_property_value}
+       
+
+        rPost = requests.post('http://localhost:3030/api/answer/what', data=dataPhone)
+        results = rPost.json()
+        ImageLink =""
+    
+        if results["isFlag"]:
+            message = results["message"]
         else:
-            print("No address found. Most likely this action was executed "
-                  "before the user choose a healthcare facility from the "
-                  "provided list. "
-                  "If this is a common problem in your dialogue flow,"
-                  "using a form instead for this action might be appropriate.")
+            messageLasted = results["message"]
+            SearchKeyword = requests.post('http://localhost:3030/api/answer/searchkeyword', data=dataPhone)
+            results = SearchKeyword.json()
+            print(results)
+            
+            ImageLink = results["urlImage"]
+            message =messageLasted + ". Em có tìm kiếm trên google thì thấy được kết quả. Anh/chị có thể tham khảo thử: {}".format(results['searchLink'])
+        # Send responses back to the user
+        dispatcher.utter_message(text=message,image=ImageLink)
+        # return [AllSlotsReset()]
+        return [SlotSet("phone_property", None), SlotSet("phone_property_value", None)]
 
-            return [SlotSet("facility_address", "not found")]
-        
-        
 
-class FacilityForm(FormAction):
-    """Custom form action to fill all slots required to find specific type
-    of healthcare facilities in a certain city or zip code."""
+class AskYesNoAction(Action):
+    
+    def name(self) -> Text:
+        return "action_answer_yes_no"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict]:
+
+        # lấy các entities
+        phone_name = tracker.get_slot("phone_name")
+        phone_property = tracker.get_slot("phone_property")
+        phone_property_value = tracker.get_slot("phone_property_value")
+        dataPhone = {'PhoneName': phone_name, 'PhoneProperty': phone_property, 'PhonePropertyValue': phone_property_value}
+       
+
+        rPost = requests.post('http://localhost:3030/api/answer/yesno', data=dataPhone)
+        results = rPost.json()
+        ImageLink =""
+    
+        if results["isFlag"]:
+            message = results["message"]
+        else:
+            messageLasted = results["message"]
+            SearchKeyword = requests.post('http://localhost:3030/api/answer/searchkeyword', data=dataPhone)
+            results = SearchKeyword.json()
+            print(results)
+            
+            ImageLink = results["urlImage"]
+            message =messageLasted + ". Em có tìm kiếm trên google thì thấy được kết quả. Anh/chị có thể tham khảo thử: {}".format(results['searchLink'])
+        # Send responses back to the user
+        dispatcher.utter_message(text=message,image=ImageLink)
+        # return [AllSlotsReset()]
+        return [SlotSet("phone_property", None), SlotSet("phone_property_value", None)]
+
+class AskCompareAction(Action):
+    
+    def name(self) -> Text:
+        return "action_answer_compare"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict]:
+
+        # lấy các entities
+        entityPhoneName = tracker.get_latest_entity_values("phone_name")
+        if (entityPhoneName):
+            phone_name_first = next(entityPhoneName)
+            phone_name_second = next(entityPhoneName)
+
+        phone_property = tracker.get_slot("phone_property")
+        print (phone_name_first)
+        print(phone_name_second)
+        print(phone_property)
+        dataPhone = {'PhoneNameFirst': phone_name_first,'PhoneNameSecond':phone_name_second,'PhoneProperty': phone_property}
+
+        rPost = requests.post('http://localhost:3030/api/answer/compare', data=dataPhone)
+        results = rPost.json()
+        # # Send responses back to the user
+        dispatcher.utter_message(text=results["message"])
+        # return [AllSlotsReset()]
+        return [SlotSet("phone_property", None)]
+
+
+class AskForm(FormAction):
 
     def name(self) -> Text:
-        return "facility_form"
+        return "ask_form"
 
     @staticmethod
     def required_slots(tracker: Tracker):
-        """A list of required slots that the form has to fill"""
+        if (not (tracker.get_slot('phone_property_value') is None)):
+            return ['phone_name', 'phone_property','phone_property_value']
+        else:
+            return ['phone_name', 'phone_property']
+        
 
-        return ["facility_type", "location"]
-
-    def slot_mappings(self) -> Dict[Text, Any]:
-        return {"facility_type": self.from_entity(entity="facility_type",
-                                                  intent=["inform", "search_provider"]),
-                "location": self.from_entity(entity="location", intent=["inform", "search_provider"])}
+    def slot_mappings(self):
+        return {"phone_name": [self.from_entity(entity="phone_name")],
+                "phone_property": [self.from_entity(entity="phone_property")],
+                "phone_property_value": [self.from_entity(entity="phone_property_value")]}
 
     def submit(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict]:
-        """Once required slots are filled, print buttons for found facilities"""
+        phone_name = tracker.get_slot("phone_name")
+        
+        phone_property = tracker.get_slot("phone_property")
+        phone_property_value = tracker.get_slot("phone_property_value")
+        print (phone_property)
+         # Lay danh sach intent
+        intent_ranking = tracker.latest_message.get("intent_ranking", [])
+        print(intent_ranking)
+        def getIntentNext(intent_ranking):
+            result = []
 
-        location = tracker.get_slot("location")
-        facility_type = tracker.get_slot("facility_type")
+            for intent in intent_ranking:
+                if (intent.get("name") == "ask_yes_no"):
+                    result.append(intent)
+                elif (intent.get("name") == "ask_what"):
+                    result.append(intent)
+            if len(result) == 2:
+                item1 = result[0]
+                item2 = result[1]
 
-        results = _find_facilities(location, facility_type)
-        button_name = _resolve_name(FACILITY_TYPES, facility_type)
+                if item1["confidence"] > item2["confidence"]:
+                    return item1["name"]
+                else:
+                    return item2["name"] 
+            elif len(result) == 1:
+                return result[0]["name"]
+            elif len(result) == 0:
+                return "ask_yes_no"
+        ActionNext = getIntentNext(intent_ranking)
 
-        if len(results) == 0:
-            dispatcher.utter_message(
-                "Sorry, we could not find a {} in {}.".format(button_name, location.title()))
-            return []
+        print(ActionNext)
+        
+        if ActionNext == "ask_what":
+            return [FollowupAction('action_answer_what')] 
+        elif ActionNext == "ask_yes_no":
+            return [FollowupAction('action_answer_yes_no')]
+        else:
+            return []      
+
+
+
+class ActionDefaultAskAffirmation(Action):
+    """Asks for an affirmation of the intent if NLU threshold is not met."""
+
+    def name(self):
+        return "action_default_ask_affirmation"
+
+    def __init__(self):
+        import pandas as pd
+
+        self.intent_mappings = pd.read_csv('intent_description_mapping.csv', encoding='utf-8')
+        self.intent_mappings.fillna("", inplace=True)
+        self.intent_mappings.entities = self.intent_mappings.entities.map(
+            lambda entities: {e.strip() for e in entities.split(",")}
+        )
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[EventType]:
+        # Lay danh sach intent
+        intent_ranking = tracker.latest_message.get("intent_ranking", [])
+        
+        if len(intent_ranking) > 1:
+            diff_intent_confidence = intent_ranking[0].get(
+                "confidence"
+            ) - intent_ranking[1].get("confidence")
+
+            if diff_intent_confidence < 0.2:
+                intent_ranking = intent_ranking[:2]
+            else:
+                intent_ranking = intent_ranking[:1]
+
+        first_intent_names = [
+            intent.get("name", "")
+            for intent in intent_ranking
+            if intent.get("name", "") != "out_of_scope"
+        ]
+
+
+        message_title = (
+            "Xin lỗi Anh/Chị. Em không chắc là đã hiểu ý của anh/chị. Ý của anh/chị là ..."
+        )
+
+        entities = tracker.latest_message.get("entities", [])
+        entities = {e["entity"]: e["value"] for e in entities}
+
+        entities_json = json.dumps(entities)
 
         buttons = []
-        # limit number of results to 3 for clear presentation purposes
-        for r in results[:3]:
-
-            if facility_type == FACILITY_TYPES["hospital"]["resource"]:
-                facility_id = r.get('provider_id')
-                name = r["hospital_name"]
-            elif facility_type == FACILITY_TYPES["nursing_home"]["resource"]:
-                facility_id = r.get('federal_provider_number')
-                name = r['provider_name']
-            else:
-                facility_id = r.get('provider_number')
-                name = r['provider_name']
-
-            payload = "/inform{\"facility_id\":\"" + facility_id + "\"}"
+        for intent in first_intent_names:
+            logger.debug(intent)
+            logger.debug(entities)
             buttons.append(
-                {"title": "{}".format(name.title()), "payload": payload}
+                {
+                    "title": self.get_button_title(intent, entities),
+                    "payload": "/{}{}".format(intent, entities_json)
+                }
             )
-        if len(buttons) == 1:
-            message = "Here is {} near you".format(button_name)
+
+        # /out_of_scope is a retrieval intent
+        # you cannot send rasa the '/out_of_scope' intent
+        # instead, you can send one of the sentences that it will map onto the response
+
+        buttons.append(
+            {
+                "title": "Một cái gì khác",
+                "payload": "Tôi đang hỏi bạn câu hỏi ngoài phạm vi"
+            }
+        )
+
+        dispatcher.utter_message(text=message_title, buttons=buttons)
+        
+        return []
+
+    
+    def get_button_title(self, intent: Text, entities: Dict[Text, Text]) -> Text:
+        default_utterance_query = self.intent_mappings.intent == intent
+        utterance_query = (self.intent_mappings.entities == entities.keys()) & (default_utterance_query)
+        
+        utterances = self.intent_mappings[utterance_query].button.tolist()
+        
+        if len(utterances) > 0:
+            button_title = utterances[0]
         else:
-            if button_name == "home health agency":
-               button_name = "home health agencies"
-            message = "Here are {} {} near you".format(len(buttons), button_name)
-        
-        # TODO: update rasa core version for configurable `button_type`
-        dispatcher.utter_message(text=message, buttons= buttons)
-        
-        return[]   
-        
+            utterances = self.intent_mappings[default_utterance_query].button.tolist()
+            button_title = utterances[0] if len(utterances) > 0 else intent
+        return button_title.format(**entities)

@@ -1,0 +1,923 @@
+[
+  {
+    "text": "Cho em hỏi Pin của iPhone 7 Plus chơi game bao lâu ạ?",
+    "entities": [
+      {
+        "start": 11,
+        "end": 14,
+        "value": "Pin",
+        "entity": "phone_property"
+      },
+      {
+        "start": 19,
+        "end": 32,
+        "value": "iPhone 7 Plus",
+        "entity": "phone_name"
+      },
+      {
+        "start": 43,
+        "end": 50,
+        "value": "bao lâu",
+        "entity": "phone_property_value"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_property",
+        "start": 11,
+        "end": 14,
+        "role": "O",
+        "value": "Pin",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 19,
+        "end": 32,
+        "role": "O",
+        "value": "iPhone 7 Plus",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 33,
+        "end": 42,
+        "role": "O",
+        "value": "chơi game",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property_value",
+        "start": 43,
+        "end": 50,
+        "role": "O",
+        "value": "bao lâu",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Nokia 110 danh bạ bao nhiêu số ạ",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Nokia",
+        "entity": "phone_name"
+      },
+      {
+        "start": 10,
+        "end": 17,
+        "value": "danh bạ",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 0,
+        "end": 5,
+        "role": "O",
+        "value": "Nokia",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 10,
+        "end": 17,
+        "role": "O",
+        "value": "danh bạ",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property_value",
+        "start": 18,
+        "end": 27,
+        "role": "O",
+        "value": "bao nhiêu",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Máy Realme 5 sạc mấy tiếng mới đầy ạ?",
+    "entities": [
+      {
+        "start": 4,
+        "end": 12,
+        "value": "Realme 5",
+        "entity": "phone_name"
+      },
+      {
+        "start": 13,
+        "end": 16,
+        "value": "sạc",
+        "entity": "phone_property"
+      },
+      {
+        "start": 17,
+        "end": 26,
+        "value": "mấy tiếng",
+        "entity": "phone_property_value"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 4,
+        "end": 10,
+        "role": "O",
+        "value": "Realme",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 13,
+        "end": 16,
+        "role": "O",
+        "value": "sạc",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property_value",
+        "start": 17,
+        "end": 26,
+        "role": "O",
+        "value": "mấy tiếng",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Mua điện thoại OPPO A5 trả góp có kèm khuyến mãi sim ko?",
+    "entities": [
+      {
+        "start": 15,
+        "end": 22,
+        "value": "OPPO A5",
+        "entity": "phone_name"
+      },
+      {
+        "start": 38,
+        "end": 48,
+        "value": "khuyến mãi",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 15,
+        "end": 22,
+        "role": "O",
+        "value": "OPPO A5",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 38,
+        "end": 52,
+        "role": "O",
+        "value": "khuyến mãi sim",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Cho em hỏi Pin của iPhone 7 Plus chơi game bao lâu ạ?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 32,
+        "value": "iPhone 7 Plus",
+        "entity": "phone_name"
+      },
+      {
+        "start": 33,
+        "end": 42,
+        "value": "chơi game",
+        "entity": "phone_property"
+      },
+      {
+        "start": 43,
+        "end": 50,
+        "value": "bao lâu",
+        "entity": "phone_property_value"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_property",
+        "start": 11,
+        "end": 14,
+        "role": "O",
+        "value": "Pin",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 19,
+        "end": 32,
+        "role": "O",
+        "value": "iPhone 7 Plus",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 33,
+        "end": 42,
+        "role": "O",
+        "value": "chơi game",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property_value",
+        "start": 43,
+        "end": 50,
+        "role": "O",
+        "value": "bao lâu",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Mua trả góp Realme 3 Pro giá bao nhiêu ạ",
+    "entities": [
+      {
+        "start": 12,
+        "end": 24,
+        "value": "Realme 3 Pro",
+        "entity": "phone_name"
+      },
+      {
+        "start": 25,
+        "end": 28,
+        "value": "giá",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_property",
+        "start": 4,
+        "end": 11,
+        "role": "O",
+        "value": "trả góp",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 12,
+        "end": 24,
+        "role": "O",
+        "value": "Realme 3 Pro",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 25,
+        "end": 28,
+        "role": "O",
+        "value": "giá",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Máy Realme 5 sạc mấy tiếng mới đầy ạ",
+    "entities": [
+      {
+        "start": 13,
+        "end": 16,
+        "value": "sạc",
+        "entity": "phone_property"
+      },
+      {
+        "start": 17,
+        "end": 26,
+        "value": "mấy tiếng",
+        "entity": "phone_property_value"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 4,
+        "end": 10,
+        "role": "O",
+        "value": "Realme",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 13,
+        "end": 16,
+        "role": "O",
+        "value": "sạc",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property_value",
+        "start": 17,
+        "end": 26,
+        "role": "O",
+        "value": "mấy tiếng",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Nokia 110 Danh bạ bao nhiêu số ạ",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "Nokia 110",
+        "entity": "phone_name"
+      },
+      {
+        "start": 18,
+        "end": 27,
+        "value": "bao nhiêu",
+        "entity": "phone_property_value"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 0,
+        "end": 5,
+        "role": "O",
+        "value": "Nokia",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property_value",
+        "start": 18,
+        "end": 27,
+        "role": "O",
+        "value": "bao nhiêu",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Cho em hỏi cục sạc theo máy iPhone 11 có hỗ trợ sạc nhanh không ạ?",
+    "entities": [
+      {
+        "start": 28,
+        "end": 37,
+        "value": "iPhone 11",
+        "entity": "phone_name"
+      },
+      {
+        "start": 48,
+        "end": 57,
+        "value": "sạc nhanh",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_property",
+        "start": 15,
+        "end": 18,
+        "role": "O",
+        "value": "sạc",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 28,
+        "end": 37,
+        "role": "O",
+        "value": "iPhone 11",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 48,
+        "end": 57,
+        "role": "O",
+        "value": "sạc nhanh",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Cho em hỏi Xiaomi Redmi Note 8 có ghi màn hình như iPhone được không Ad",
+    "entities": [
+      {
+        "start": 11,
+        "end": 30,
+        "value": "Xiaomi Redmi Note 8",
+        "entity": "phone_name"
+      },
+      {
+        "start": 34,
+        "end": 47,
+        "value": "ghi màn hình",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 11,
+        "end": 30,
+        "role": "O",
+        "value": "Xiaomi Redmi Note 8",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 34,
+        "end": 47,
+        "role": "O",
+        "value": "ghi màn hình",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 52,
+        "end": 58,
+        "role": "O",
+        "value": "iPhone",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Máy Mobell M889 này có chống ồn không?",
+    "entities": [
+      {
+        "start": 23,
+        "end": 31,
+        "value": "chống ồn",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 4,
+        "end": 10,
+        "role": "O",
+        "value": "Mobell",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 23,
+        "end": 31,
+        "role": "O",
+        "value": "chống ồn",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "OPPO A5s và Samsung Galaxy A30s chip nào chơi game mượt ạ",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "OPPO A5s",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 12,
+        "end": 31,
+        "value": "Samsung Galaxy A30s",
+        "entity": "phone_name",
+        "role": "second"
+      },
+      {
+        "start": 41,
+        "end": 50,
+        "value": "chơi game",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 0,
+        "end": 8,
+        "role": "first",
+        "value": "OPPO A5s",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 12,
+        "end": 31,
+        "role": "second",
+        "value": "Samsung Galaxy A30s",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 32,
+        "end": 36,
+        "role": "O",
+        "value": "chip",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 41,
+        "end": 50,
+        "role": "O",
+        "value": "chơi game",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Cho mình hỏi chip của máy iPhone 11 và chip của máy Samsung Galaxy Note 10 Lite thì máy nào có hiệu năng mạnh hơn",
+    "entities": [
+      {
+        "start": 13,
+        "end": 17,
+        "value": "chip",
+        "entity": "phone_property"
+      },
+      {
+        "start": 26,
+        "end": 35,
+        "value": "iPhone 11",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 39,
+        "end": 43,
+        "value": "chip",
+        "entity": "phone_property"
+      },
+      {
+        "start": 52,
+        "end": 79,
+        "value": "Samsung Galaxy Note 10 Lite",
+        "entity": "phone_name",
+        "role": "second"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_property",
+        "start": 13,
+        "end": 17,
+        "role": "O",
+        "value": "chip",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 26,
+        "end": 35,
+        "role": "second",
+        "value": "iPhone 11",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 39,
+        "end": 43,
+        "role": "O",
+        "value": "chip",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 52,
+        "end": 79,
+        "role": "second",
+        "value": "Samsung Galaxy Note 10 Lite",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Máy iPhone 11 Pro Max này với iPhone Xs Max máy nào chụp ảnh đẹp hơn",
+    "entities": [
+      {
+        "start": 4,
+        "end": 21,
+        "value": "iPhone 11 Pro Max",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 32,
+        "end": 45,
+        "value": "iPhone Xs Max",
+        "entity": "phone_name",
+        "role": "second"
+      },
+      {
+        "start": 56,
+        "end": 65,
+        "value": "chụp ảnh",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 4,
+        "end": 21,
+        "role": "first",
+        "value": "iPhone 11 Pro Max",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 32,
+        "end": 45,
+        "role": "second",
+        "value": "iPhone Xs Max",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 56,
+        "end": 65,
+        "role": "O",
+        "value": "chụp ảnh",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 69,
+        "end": 70,
+        "role": "O",
+        "value": "p",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "em đang phân vân là không biết nên mua con Samsung Note 10 Lite này hay mua con iPhone 8 Plus vì em thì thích SS còn bạn gái em thì thích IP, anh.chị tư vấn giúp em vs ạ, Nếu hợp lí thì em mua cả 2 luôn.",
+    "entities": [
+      {
+        "start": 43,
+        "end": 63,
+        "value": "Samsung Note 10 Lite",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 80,
+        "end": 93,
+        "value": "iPhone 8 Plus",
+        "entity": "phone_name",
+        "role": "second"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 43,
+        "end": 63,
+        "role": "second",
+        "value": "Samsung Note 10 Lite",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 80,
+        "end": 93,
+        "role": "second",
+        "value": "iPhone 8 Plus",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Cho mình hỏi chip của máy iPhone 11 và chip của máy OPPO Find X thì máy nào có hiệu năng mạnh hơn",
+    "entities": [
+      {
+        "start": 13,
+        "end": 17,
+        "value": "chip",
+        "entity": "phone_property"
+      },
+      {
+        "start": 26,
+        "end": 35,
+        "value": "iPhone 11",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 39,
+        "end": 43,
+        "value": "chip",
+        "entity": "phone_property"
+      },
+      {
+        "start": 52,
+        "end": 63,
+        "value": "OPPO Find X",
+        "entity": "phone_name",
+        "role": "second"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_property",
+        "start": 13,
+        "end": 17,
+        "role": "O",
+        "value": "chip",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 26,
+        "end": 35,
+        "role": "second",
+        "value": "iPhone 11",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 39,
+        "end": 43,
+        "role": "O",
+        "value": "chip",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 52,
+        "end": 63,
+        "role": "second",
+        "value": "OPPO Find X",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Cho em hỏi Realme 6 Pro với Xiaomi Redmi Note 9 Pro cái nào mạnh hơn về chơi game với bin trâu ạ",
+    "entities": [
+      {
+        "start": 11,
+        "end": 23,
+        "value": "Realme 6 Pro",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 28,
+        "end": 51,
+        "value": "Xiaomi Redmi Note 9 Pro",
+        "entity": "phone_name",
+        "role": "second"
+      },
+      {
+        "start": 72,
+        "end": 81,
+        "value": "chơi game",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 11,
+        "end": 23,
+        "role": "second",
+        "value": "Realme 6 Pro",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 28,
+        "end": 51,
+        "role": "second",
+        "value": "Xiaomi Redmi Note 9 Pro",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 72,
+        "end": 81,
+        "role": "O",
+        "value": "chơi game",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Qtv cho e hỏi là con chip OPPO A1K với con chip Vivo Y91c thì như thế nào z ạ",
+    "entities": [
+      {
+        "start": 21,
+        "end": 25,
+        "value": "chip",
+        "entity": "phone_property"
+      },
+      {
+        "start": 26,
+        "end": 34,
+        "value": "OPPO A1K",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 43,
+        "end": 47,
+        "value": "chip",
+        "entity": "phone_property"
+      },
+      {
+        "start": 48,
+        "end": 57,
+        "value": "Vivo Y91c",
+        "entity": "phone_name",
+        "role": "second"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_property",
+        "start": 21,
+        "end": 25,
+        "role": "O",
+        "value": "chip",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 26,
+        "end": 34,
+        "role": "second",
+        "value": "OPPO A1K",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 43,
+        "end": 47,
+        "role": "O",
+        "value": "chip",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 48,
+        "end": 57,
+        "role": "second",
+        "value": "Vivo Y91c",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Dạ cho e hỏi pin này xài tầm bao lâu ạ?",
+    "entities": [
+      {
+        "start": 13,
+        "end": 16,
+        "value": "pin",
+        "entity": "phone_property"
+      },
+      {
+        "start": 21,
+        "end": 24,
+        "value": "xài",
+        "entity": "phone_property_value"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_property",
+        "start": 13,
+        "end": 16,
+        "role": "O",
+        "value": "pin",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property_value",
+        "start": 21,
+        "end": 24,
+        "role": "O",
+        "value": "xài",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property_value",
+        "start": 29,
+        "end": 36,
+        "role": "O",
+        "value": "bao lâu",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

@@ -1,95 +1,74 @@
-intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-  - inform
-  - search_provider
-  - out_of_scope
-  - zz
-  - thanks
-
-entities:
-  - location
-  - facility_type
-  - facility_id
-
-
-slots:
-  location:
-    type: text
-  facility_type:
-    type: text
-  facility_id:
-    type: unfeaturized
-  facility_address:
-    type: unfeaturized
-
-actions:
-  - utter_greet
-  - utter_cheer_up
-  - utter_did_that_help
-  - utter_happy
-  - utter_goodbye
-  - utter_iamabot
-  - utter_ask_location
-  - utter_how_can_i_help
-  - utter_ask_facility_type
-  - utter_address
-  - utter_noworries
-  - find_facility_types
-  - utter_zz
-  - find_healthcare_address
-
-forms:
-- facility_form
-
-responses:
-  utter_greet:
-  - text: "Hi. What are you looking for?"
-  - text: "Hey there! Please choose one of the healthcare facility options:"
-  - text: "Hello! What can I help you find today?"
-  
-  utter_zz:
-  - text: "Hey there! Please choose one of the healthcare facility options:"
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
-  utter_noworries:
-  - text: "My pleasure."
-  - text: "You are welcome!"
-
-  utter_how_can_i_help:
-  - text: "Hello. I am a medicare locator. I can help you find nearset hospital. How can I help?"
-  - text: "Hi. My name is mediacare locator. How can I help you today?"
-
-  utter_ask_facility_type:
-  - text: "Choose one of the following to search for: hospital, nursing home, or home health agency."
-
-  utter_ask_location:
-  - text: "Please provide your city name."
-  - text: "What is your current city?"
-  - text: "Please provide your city name or zip code."
-  - text: "Please enter your zip code or city name to find local providers."
-
-  utter_address:
-  - text: "The address is {facility_address}."
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
-
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+intents:
+- greet
+- inform
+- goodbye
+- affirm
+- deny
+- ask_what
+- out_of_scope
+- thank
+- ask_yes_no
+- ask_compare
+entities:
+- phone_name
+- phone_property
+- phone_property_value
+slots:
+  phone_name:
+    type: text
+  phone_property:
+    type: text
+  phone_property_value:
+    type: text
+  requested_slot:
+    type: unfeaturized
+responses:
+  utter_ask_phone_name:
+  - text: Anh/ Chị vui lòng cung cấp tên điện thoại để em có thể tìm thông tin ạ
+  utter_ask_phone_property:
+  - text: Anh/Chị cung cấp giúp em tính năng hoặc tên bộ phận của điện thoại mình
+      cần hỏi ạ
+  utter_ask_phone_property_value:
+  - text: Anh/Chị cung cấp giúp em tính năng của điện thoại với ạ
+  utter_did_that_help:
+  - text: Điều đó có giúp được gì cho anh/chị không?
+  utter_goodbye:
+  - text: Tạm biệt anh/chị. Chúc anh/chị ngày mới tốt lành.
+  utter_greet:
+  - text: Xin chào Anh/Chị. Em là bot. Em có thể giúp được gì cho anh/chị?
+  utter_happy:
+  - text: Tuyệt vời
+  utter_question:
+  - buttons:
+    - payload: /affirm
+      title: Có
+    - payload: /deny
+      title: Không
+    text: Dạ anh/chị có muốn hỏi thêm thông tin gì nữa không ạ?
+  utter_thank:
+  - text: Dạ, em cảm ơn anh/chị đã tin tưởng bên em.
+  utter_affirm:
+  - text: Dạ anh/chị cứ đặt câu hỏi ạ. Em sẽ giải đáp mọi thắc mắc của anh/chị
+  utter_deny:
+  - text: Dạ. Em cảm ơn anh/chị đã sử dụng dịch vụ bên em.
+actions:
+- action_answer_what
+- action_default_ask_affirmation
+- action_answer_yes_no
+- action_answer_compare
+- utter_ask_phone_name
+- utter_ask_phone_property
+- utter_ask_phone_property_value
+- utter_did_that_help
+- utter_goodbye
+- utter_greet
+- utter_happy
+- utter_question
+- utter_thank
+- utter_affirm
+- utter_deny
+forms:
+- ask_form
