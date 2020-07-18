@@ -50,7 +50,7 @@ et-xmlfile==1.0.1
 execnet==1.7.1
 fakeredis==0.8.2
 fbmessenger==6.0.0
-Flask==0.12
+Flask==1.0
 ftfy==4.4.3
 future==0.16.0
 gast==0.2.2
