@@ -5,6 +5,7 @@
     - ask_form
     - form{"name": "ask_form"}
     - form{"name": null}
+
 ## What
 * greet
     - utter_greet
@@ -68,6 +69,9 @@
 * thank
     - utter_thank
 
+## goodbye
+* goodbye
+    - utter_goodbye
 ## Compare affirm
 * greet
     - utter_greet
@@ -82,8 +86,6 @@
     - form{"name": null} 
 * thank
     - utter_thank
-
-
 
 ## New What 2020062301
 * greet
@@ -113,7 +115,6 @@
 * thank
     - utter_thank
 
-
 ## New What 2020062303
 * greet
     - utter_greet
@@ -125,7 +126,6 @@
     - utter_deny
 * thank
     - utter_thank
-
 
 ## New What 2020062304
 * greet
@@ -218,7 +218,6 @@
     - action_answer_what
 * thank
     - utter_thank
-
 
 ## New YesNo 2020062301
 * greet
@@ -320,7 +319,7 @@
 * ask_yes_no{"phone_name":"Samsung Galaxy A20","phone_property":"nguyên seal"}
     - action_answer_yes_no
 * thank
-    - utter_thank    
+    - utter_thank
 
 ## New YesNo 2020062311
 * greet
@@ -330,7 +329,7 @@
     - action_answer_yes_no
     - utter_question
 * thank
-    - utter_thank    
+    - utter_thank
 
 ## New YesNo 2020062312
 * greet
@@ -339,7 +338,7 @@
 * ask_yes_no{"phone_name":"Samsung Galaxy A01","phone_property":"mở khóa","phone_property_value":"vân tay"}
     - action_answer_yes_no
 * thank
-    - utter_thank    
+    - utter_thank
 
 ## New YesNo 2020062313
 * greet
@@ -348,7 +347,7 @@
 * ask_yes_no{"phone_name":"iPhone 8 Plus","phone_property":"chơi game","phone_property_value":"tốt"}
     - action_answer_yes_no
 * thank
-    - utter_thank    
+    - utter_thank
 
 ## New YesNo 2020062314
 * greet
@@ -398,7 +397,6 @@
 * thank
     - utter_thank
 
-
 ## New Compare 2020062304
 * greet
     - utter_greet
@@ -444,3 +442,44 @@
     - action_answer_compare
 * thank
     - utter_thank
+
+## Story from conversation with 214f3082107b40799dbe97a5e968207f on July 19th 2020
+
+* greet
+    - utter_greet
+* ask_what{"phone_name":"iPhone 11","phone_property":"sim"}
+    - slot{"phone_name":"iPhone 11"}
+    - slot{"phone_property":"sim"}
+    - slot{"phone_name":"iPhone 11"}
+    - slot{"phone_property":"sim"}
+    - action_answer_what
+    - slot{"phone_property":null}
+    - slot{"phone_property_value":null}
+    - utter_question
+* affirm
+    - utter_affirm
+* inform{"phone_property":"khuyến mãi"}
+    - slot{"phone_property":"khuyến mãi"}
+    - slot{"phone_property":"khuyến mãi"}
+    - ask_form
+    - form{"name":"ask_form"}
+    - slot{"phone_name":"iPhone 11"}
+    - slot{"phone_property":"khuyến mãi"}
+    - slot{"phone_property":"khuyến mãi"}
+    - form{"name":null}
+    - slot{"requested_slot":null}
+    - action_answer_what
+    - slot{"phone_property":null}
+    - slot{"phone_property_value":null}
+    - utter_question
+* affirm
+    - utter_affirm
+* deny
+    - utter_deny
+* thank
+    - utter_thank
+* goodbye
+    - slot{"phone_name":"iPhone 11"}
+    - slot{"phone_property":"sim"}
+    - slot{"phone_property":"khuyến mãi"}
+    - utter_goodbye
