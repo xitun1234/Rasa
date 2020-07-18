@@ -7,10 +7,9 @@ RUN apt-get update && apt-get install -y python3 python3-pip && python3 -m pip i
 ENV PORT 5005
 
 WORKDIR /app
-
-ADD . .
+ADD . /app/
 
 EXPOSE 5005
-USER 1001
+
 RUN chmod +x /app/start_services.sh
 CMD /app/start_services.sh
