@@ -28,7 +28,7 @@ class AskWhatAction(Action):
         dataPhone = {'PhoneName': phone_name, 'PhoneProperty': phone_property, 'PhonePropertyValue': phone_property_value}
        
 
-        rPost = requests.post('https://a7d8ad1aca61.ngrok.io/api/answer/what', data=dataPhone)
+        rPost = requests.post('https://fbf1c0ac4803.ngrok.io/api/answer/what', data=dataPhone)
         results = rPost.json()
         ImageLink =""
     
@@ -36,7 +36,7 @@ class AskWhatAction(Action):
             message = results["message"]
         else:
             messageLasted = results["message"]
-            SearchKeyword = requests.post('https://a7d8ad1aca61.ngrok.io/api/answer/searchkeyword', data=dataPhone)
+            SearchKeyword = requests.post('https://fbf1c0ac4803.ngrok.io/api/answer/searchkeyword', data=dataPhone)
             results = SearchKeyword.json()
             print(results)
             
@@ -62,7 +62,7 @@ class AskYesNoAction(Action):
         dataPhone = {'PhoneName': phone_name, 'PhoneProperty': phone_property, 'PhonePropertyValue': phone_property_value}
        
 
-        rPost = requests.post('https://a7d8ad1aca61.ngrok.io/api/answer/yesno', data=dataPhone)
+        rPost = requests.post('https://fbf1c0ac4803.ngrok.io/api/answer/yesno', data=dataPhone)
         results = rPost.json()
         ImageLink =""
     
@@ -70,7 +70,7 @@ class AskYesNoAction(Action):
             message = results["message"]
         else:
             messageLasted = results["message"]
-            SearchKeyword = requests.post('https://a7d8ad1aca61.ngrok.io/api/answer/searchkeyword', data=dataPhone)
+            SearchKeyword = requests.post('https://fbf1c0ac4803.ngrok.io/api/answer/searchkeyword', data=dataPhone)
             results = SearchKeyword.json()
             print(results)
             
@@ -100,7 +100,7 @@ class AskCompareAction(Action):
         print(phone_property)
         dataPhone = {'PhoneNameFirst': phone_name_first,'PhoneNameSecond':phone_name_second,'PhoneProperty': phone_property}
 
-        rPost = requests.post('https://a7d8ad1aca61.ngrok.io/api/answer/compare', data=dataPhone)
+        rPost = requests.post('https://fbf1c0ac4803.ngrok.io/api/answer/compare', data=dataPhone)
         results = rPost.json()
         # # Send responses back to the user
         dispatcher.utter_message(text=results["message"])
