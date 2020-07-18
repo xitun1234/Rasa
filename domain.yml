@@ -56,7 +56,6 @@ responses:
   - text: Dạ. Em cảm ơn anh/chị đã sử dụng dịch vụ bên em.
 actions:
 - action_answer_what
-- action_default_ask_affirmation
 - action_answer_yes_no
 - action_answer_compare
 - utter_ask_phone_name
