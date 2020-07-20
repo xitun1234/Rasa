@@ -1,0 +1,96 @@
+name: Model CI
+on:
+  push:
+    branches:
+    - 'master'
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+env:
+  DOMAIN: '34.87.52.153'
+
+jobs:
+  build-model:
+    name: Build, test, and upload model
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Python 3.7
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.7
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    - name: Check stories are consistent
+      run: |
+        rasa data validate stories --max-history 5 --fail-on-warning
+    - name: Train model
+      run: |
+        rasa train
+    - name: Run Through Test Stories
+      run: |
+        rasa test core --stories test_stories/stories.md --fail-on-prediction-errors
+    - name: Cross-validate NLU model
+      if: github.event_name == 'pull_request'
+      run: |
+        rasa test nlu -f 2 --cross-validation
+    - name: Upload Cross Validation Results
+      if: github.event_name == 'pull_request'
+      uses: actions/upload-artifact@v2
+      with:
+        name: cross-validation-result
+        path: results.md
+
+    - name: Upload model
+      if: github.event_name == 'push' && (startsWith(github.event.ref, 'refs/tags') || github.ref == 'refs/heads/master')
+      uses: actions/upload-artifact@v2
+      with:
+        name: model
+        path: models
+
+
+  
+  upload-model:
+    name: Upload the trained model to Rasa X
+    needs: 
+    - build-model
+    env:
+      MODEL_DIRECTORY: "models"
+
+    if: github.event_name == 'push' && (startsWith(github.event.ref, 'refs/tags') || github.ref == 'refs/heads/master')
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Download Model
+      uses: actions/download-artifact@v2
+      with:
+        name: model
+        path: ${{ env.MODEL_DIRECTORY }}
+
+    - name: Get path to model
+      run: |
+        ls -R
+        echo "::set-env name=MODELNAME::${{ env.MODEL_DIRECTORY }}/$(ls ${{ env.MODEL_DIRECTORY }})"
+    - name: Upload Model to Rasa
+      env:
+        RASA_X_PASSWORD: zxc123
+        RASA_X_USERNAME: me
+
+      run: |
+        
+        # Get token
+        RASA_X_TOKEN=$(curl -s --header "Content-Type: application/json" \
+          --request POST \
+          --data "{\"username\":\"${RASA_X_USERNAME}\",\"password\":\"${RASA_X_PASSWORD}\"}" \
+          http://${{ env.DOMAIN }}/api/auth | jq -r .access_token)
+        # Upload model
+        curl -k --fail -H "Authorization: Bearer ${RASA_X_TOKEN}" -F "model=@${MODELNAME}" http://${{ env.DOMAIN }}/api/projects/default/models
+        # ensure model is ready and tag as production
+        sleep 5
+        export MODEL=$(basename ${MODELNAME} .tar.gz)
+        curl --fail -XPUT -H "Authorization: Bearer ${RASA_X_TOKEN}" http://${{ env.DOMAIN }}/api/projects/default/models/${MODEL}/tags/production
