@@ -32,19 +32,6 @@ jobs:
     - name: Train model
       run: |
         rasa train
-    - name: Run Through Test Stories
-      run: |
-        rasa test core --stories test_stories/stories.md --fail-on-prediction-errors
-    - name: Cross-validate NLU model
-      if: github.event_name == 'pull_request'
-      run: |
-        rasa test nlu -f 2 --cross-validation
-    - name: Upload Cross Validation Results
-      if: github.event_name == 'pull_request'
-      uses: actions/upload-artifact@v2
-      with:
-        name: cross-validation-result
-        path: results.md
 
     - name: Upload model
       if: github.event_name == 'push' && (startsWith(github.event.ref, 'refs/tags') || github.ref == 'refs/heads/master')
