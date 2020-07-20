@@ -16,25 +16,22 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-
     - name: Set up Python 3.7
       uses: actions/setup-python@v1
       with:
         python-version: 3.7
-
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
-        python -m pip install rasa
-        python -m pip install requests
+        python3 -m pip install --upgrade pip
+        python3 -m pip install rasa
+        python3 -m pip install requests
         pip install -r requirements.txt
     - name: Train model
       run: |
         rasa train
-    
     - name: Upload model
-      if: github.event_name == 'push' && (startsWith(github.event.ref, 'refs/tags') || github.ref == 'refs/heads/master')
-      uses: actions/upload-artifact@v2
+      if: github.ref == 'refs/heads/master'
+      uses: actions/upload-artifact@master
       with:
         name: model
         path: models
