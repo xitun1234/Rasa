@@ -69,9 +69,6 @@
 * thank
     - utter_thank
 
-## goodbye
-* goodbye
-    - utter_goodbye
 ## Compare affirm
 * greet
     - utter_greet
@@ -483,3 +480,67 @@
     - slot{"phone_property":"sim"}
     - slot{"phone_property":"khuyến mãi"}
     - utter_goodbye
+
+## New Story
+
+* ask_what{"phone_property":"Cấu hình","phone_name":"iPhone 8 Plus"}
+    - slot{"phone_name":"iPhone 8 Plus"}
+    - slot{"phone_property":"Cấu hình"}
+    - action_answer_what
+    - slot{"phone_property":null}
+    - slot{"phone_property_value":null}
+    - utter_question
+* affirm
+    - utter_affirm
+* ask_what{"phone_property":"cấu hình","phone_name":"iPhone 11"}
+    - slot{"phone_name":"iPhone 11"}
+    - slot{"phone_property":"cấu hình"}
+    - action_answer_what
+    - slot{"phone_property":null}
+    - slot{"phone_property_value":null}
+    - utter_question
+* ask_what{"phone_name":"sao","phone_property":"cấu hình ra"}
+    - slot{"phone_name":"sao"}
+    - slot{"phone_property":"cấu hình ra"}
+    - action_answer_what
+    - slot{"phone_property":null}
+    - slot{"phone_property_value":null}
+    - utter_question
+* ask_compare{"phone_property":"cấu hình","phone_name":"iPhone 11 Pro"}
+    - slot{"phone_name":"iPhone 11 Pro"}
+    - slot{"phone_property":"cấu hình"}
+    - action_answer_compare
+    - slot{"phone_property":null}
+    - utter_question
+
+## Cấu hình
+
+* ask_what{"phone_property":"cấu hình","phone_name":"realme 3i"}
+    - slot{"phone_name":"realme 3i"}
+    - slot{"phone_property":"cấu hình"}
+    - action_answer_what
+    - slot{"phone_property":null}
+    - slot{"phone_property_value":null}
+    - utter_question
+* ask_what{"phone_property":"cấu hình","phone_name":"realme c3i"}
+    - slot{"phone_name":"realme c3i"}
+    - slot{"phone_property":"cấu hình"}
+    - action_answer_what
+    - slot{"phone_property":null}
+    - slot{"phone_property_value":null}
+    - utter_question
+* ask_what{"phone_property":"cấu hình","phone_name":"vivo v19"}
+    - slot{"phone_name":"vivo v19"}
+    - slot{"phone_property":"cấu hình"}
+    - action_answer_what
+    - slot{"phone_property":null}
+    - slot{"phone_property_value":null}
+    - utter_question
+* ask_compare{"phone_property":"cấu hình","phone_name":"samsung galaxy a20s"}
+    - slot{"phone_name":"samsung galaxy a20s"}
+    - slot{"phone_property":"cấu hình"}
+    - action_answer_compare
+    - slot{"phone_property":null}
+    - utter_question
+* thank
+    - utter_thank

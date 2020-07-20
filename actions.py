@@ -28,7 +28,7 @@ class AskWhatAction(Action):
         dataPhone = {'PhoneName': phone_name, 'PhoneProperty': phone_property, 'PhonePropertyValue': phone_property_value}
        
 
-        rPost = requests.post('https://fbf1c0ac4803.ngrok.io/api/answer/what', data=dataPhone)
+        rPost = requests.post('https://amazono-chatbot.herokuapp.com/api/answer/what', data=dataPhone)
         results = rPost.json()
         ImageLink =""
     
@@ -36,7 +36,7 @@ class AskWhatAction(Action):
             message = results["message"]
         else:
             messageLasted = results["message"]
-            SearchKeyword = requests.post('https://fbf1c0ac4803.ngrok.io/api/answer/searchkeyword', data=dataPhone)
+            SearchKeyword = requests.post('https://amazono-chatbot.herokuapp.com/api/answer/searchkeyword', data=dataPhone)
             results = SearchKeyword.json()
             print(results)
             
@@ -62,7 +62,7 @@ class AskYesNoAction(Action):
         dataPhone = {'PhoneName': phone_name, 'PhoneProperty': phone_property, 'PhonePropertyValue': phone_property_value}
        
 
-        rPost = requests.post('https://fbf1c0ac4803.ngrok.io/api/answer/yesno', data=dataPhone)
+        rPost = requests.post('https://amazono-chatbot.herokuapp.com/api/answer/yesno', data=dataPhone)
         results = rPost.json()
         ImageLink =""
     
@@ -70,7 +70,7 @@ class AskYesNoAction(Action):
             message = results["message"]
         else:
             messageLasted = results["message"]
-            SearchKeyword = requests.post('https://fbf1c0ac4803.ngrok.io/api/answer/searchkeyword', data=dataPhone)
+            SearchKeyword = requests.post('https://amazono-chatbot.herokuapp.com/api/answer/searchkeyword', data=dataPhone)
             results = SearchKeyword.json()
             print(results)
             
@@ -91,16 +91,17 @@ class AskCompareAction(Action):
         # lấy các entities
         entityPhoneName = tracker.get_latest_entity_values("phone_name")
         if (entityPhoneName):
-            phone_name_first = next(entityPhoneName)
-            phone_name_second = next(entityPhoneName)
+            phone_name_first = next(entityPhoneName,None)
+            phone_name_second = next(entityPhoneName,None)
 
         phone_property = tracker.get_slot("phone_property")
-        print (phone_name_first)
-        print(phone_name_second)
-        print(phone_property)
-        dataPhone = {'PhoneNameFirst': phone_name_first,'PhoneNameSecond':phone_name_second,'PhoneProperty': phone_property}
 
-        rPost = requests.post('https://fbf1c0ac4803.ngrok.io/api/answer/compare', data=dataPhone)
+        if phone_name_second is None:
+            dataPhone = {'PhoneNameFirst': phone_name_first,'PhoneNameSecond':'','PhoneProperty': phone_property}
+        else:
+            dataPhone = {'PhoneNameFirst': phone_name_first,'PhoneNameSecond':phone_name_second,'PhoneProperty': phone_property}
+        print(dataPhone)
+        rPost = requests.post('https://amazono-chatbot.herokuapp.com/api/answer/compare', data=dataPhone)
         results = rPost.json()
         # # Send responses back to the user
         dispatcher.utter_message(text=results["message"])

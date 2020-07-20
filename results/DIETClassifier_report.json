@@ -1,50 +1,50 @@
 {
-  "phone_name.first": {
-    "precision": 1.0,
-    "recall": 0.910958904109589,
-    "f1-score": 0.953405017921147,
-    "support": 146
+  "phone_name.second": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 148
   },
   "phone_name": {
-    "precision": 0.9944852941176471,
-    "recall": 0.996316758747698,
-    "f1-score": 0.9954001839926404,
-    "support": 543
+    "precision": 0.6431980906921241,
+    "recall": 1.0,
+    "f1-score": 0.7828612926652143,
+    "support": 539
   },
   "phone_property": {
-    "precision": 0.9826923076923076,
+    "precision": 0.9770554493307839,
     "recall": 1.0,
-    "f1-score": 0.9912706110572259,
+    "f1-score": 0.988394584139265,
     "support": 511
   },
   "phone_property_value": {
-    "precision": 0.9583333333333334,
+    "precision": 0.9787234042553191,
     "recall": 1.0,
-    "f1-score": 0.9787234042553191,
+    "f1-score": 0.989247311827957,
     "support": 92
   },
-  "phone_name.second": {
-    "precision": 0.9192546583850931,
-    "recall": 1.0,
-    "f1-score": 0.9579288025889967,
-    "support": 148
+  "phone_name.first": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 146
   },
   "micro avg": {
-    "precision": 0.9800550206327373,
-    "recall": 0.9895833333333334,
-    "f1-score": 0.9847961299239807,
-    "support": 1440
+    "precision": 0.7848797250859106,
+    "recall": 0.7952646239554317,
+    "f1-score": 0.7900380491179524,
+    "support": 1436
   },
   "macro avg": {
-    "precision": 0.9709531187056764,
-    "recall": 0.9814551325714576,
-    "f1-score": 0.9753456039630658,
-    "support": 1440
+    "precision": 0.5197953888556455,
+    "recall": 0.6,
+    "f1-score": 0.5521006377264872,
+    "support": 1436
   },
   "weighted avg": {
-    "precision": 0.9808178055863277,
-    "recall": 0.9895833333333334,
-    "f1-score": 0.9847602296870794,
-    "support": 1440
+    "precision": 0.6518117400296481,
+    "recall": 0.7952646239554317,
+    "f1-score": 0.7089433300347402,
+    "support": 1436
   }
 }

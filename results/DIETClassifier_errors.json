@@ -1,62 +1,5 @@
 [
   {
-    "text": "Cho em hỏi Pin của iPhone 7 Plus chơi game bao lâu ạ?",
-    "entities": [
-      {
-        "start": 11,
-        "end": 14,
-        "value": "Pin",
-        "entity": "phone_property"
-      },
-      {
-        "start": 19,
-        "end": 32,
-        "value": "iPhone 7 Plus",
-        "entity": "phone_name"
-      },
-      {
-        "start": 43,
-        "end": 50,
-        "value": "bao lâu",
-        "entity": "phone_property_value"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "phone_property",
-        "start": 11,
-        "end": 14,
-        "role": "O",
-        "value": "Pin",
-        "extractor": "DIETClassifier"
-      },
-      {
-        "entity": "phone_name",
-        "start": 19,
-        "end": 32,
-        "role": "O",
-        "value": "iPhone 7 Plus",
-        "extractor": "DIETClassifier"
-      },
-      {
-        "entity": "phone_property",
-        "start": 33,
-        "end": 42,
-        "role": "O",
-        "value": "chơi game",
-        "extractor": "DIETClassifier"
-      },
-      {
-        "entity": "phone_property_value",
-        "start": 43,
-        "end": 50,
-        "role": "O",
-        "value": "bao lâu",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
     "text": "Nokia 110 danh bạ bao nhiêu số ạ",
     "entities": [
       {
@@ -76,16 +19,14 @@
       {
         "entity": "phone_name",
         "start": 0,
-        "end": 5,
-        "role": "O",
-        "value": "Nokia",
+        "end": 9,
+        "value": "Nokia 110",
         "extractor": "DIETClassifier"
       },
       {
         "entity": "phone_property",
         "start": 10,
         "end": 17,
-        "role": "O",
         "value": "danh bạ",
         "extractor": "DIETClassifier"
       },
@@ -93,92 +34,106 @@
         "entity": "phone_property_value",
         "start": 18,
         "end": 27,
-        "role": "O",
         "value": "bao nhiêu",
         "extractor": "DIETClassifier"
       }
     ]
   },
   {
-    "text": "Máy Realme 5 sạc mấy tiếng mới đầy ạ?",
+    "text": "Cho em hỏi Pin của iPhone 7 Plus chơi game bao lâu ạ?",
     "entities": [
       {
-        "start": 4,
-        "end": 12,
-        "value": "Realme 5",
-        "entity": "phone_name"
-      },
-      {
-        "start": 13,
-        "end": 16,
-        "value": "sạc",
+        "start": 11,
+        "end": 14,
+        "value": "Pin",
         "entity": "phone_property"
       },
       {
-        "start": 17,
-        "end": 26,
-        "value": "mấy tiếng",
+        "start": 19,
+        "end": 32,
+        "value": "iPhone 7 Plus",
+        "entity": "phone_name"
+      },
+      {
+        "start": 43,
+        "end": 50,
+        "value": "bao lâu",
+        "entity": "phone_property_value"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_property",
+        "start": 11,
+        "end": 14,
+        "value": "Pin",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 19,
+        "end": 32,
+        "value": "iPhone 7 Plus",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 33,
+        "end": 42,
+        "value": "chơi game",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property_value",
+        "start": 43,
+        "end": 50,
+        "value": "bao lâu",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Cho e hỏi Samsung Galaxy Note 9 100% pin chơi game khoảng bao nhiêu giờ là hết pin vậy?",
+    "entities": [
+      {
+        "start": 10,
+        "end": 31,
+        "value": "Samsung Galaxy Note 9",
+        "entity": "phone_name"
+      },
+      {
+        "start": 41,
+        "end": 50,
+        "value": "chơi game",
+        "entity": "phone_property"
+      },
+      {
+        "start": 58,
+        "end": 67,
+        "value": "bao nhiêu",
         "entity": "phone_property_value"
       }
     ],
     "predicted_entities": [
       {
         "entity": "phone_name",
-        "start": 4,
-        "end": 10,
-        "role": "O",
-        "value": "Realme",
+        "start": 10,
+        "end": 35,
+        "value": "Samsung Galaxy Note 9 100",
         "extractor": "DIETClassifier"
       },
       {
         "entity": "phone_property",
-        "start": 13,
-        "end": 16,
-        "role": "O",
-        "value": "sạc",
+        "start": 41,
+        "end": 50,
+        "value": "chơi game",
         "extractor": "DIETClassifier"
       },
       {
         "entity": "phone_property_value",
-        "start": 17,
-        "end": 26,
-        "role": "O",
-        "value": "mấy tiếng",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "Mua điện thoại OPPO A5 trả góp có kèm khuyến mãi sim ko?",
-    "entities": [
-      {
-        "start": 15,
-        "end": 22,
-        "value": "OPPO A5",
-        "entity": "phone_name"
-      },
-      {
-        "start": 38,
-        "end": 48,
-        "value": "khuyến mãi",
-        "entity": "phone_property"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "phone_name",
-        "start": 15,
-        "end": 22,
-        "role": "O",
-        "value": "OPPO A5",
-        "extractor": "DIETClassifier"
-      },
-      {
-        "entity": "phone_property",
-        "start": 38,
-        "end": 52,
-        "role": "O",
-        "value": "khuyến mãi sim",
+        "start": 58,
+        "end": 67,
+        "value": "bao nhiêu",
         "extractor": "DIETClassifier"
       }
     ]
@@ -210,7 +165,6 @@
         "entity": "phone_property",
         "start": 11,
         "end": 14,
-        "role": "O",
         "value": "Pin",
         "extractor": "DIETClassifier"
       },
@@ -218,7 +172,6 @@
         "entity": "phone_name",
         "start": 19,
         "end": 32,
-        "role": "O",
         "value": "iPhone 7 Plus",
         "extractor": "DIETClassifier"
       },
@@ -226,7 +179,6 @@
         "entity": "phone_property",
         "start": 33,
         "end": 42,
-        "role": "O",
         "value": "chơi game",
         "extractor": "DIETClassifier"
       },
@@ -234,7 +186,6 @@
         "entity": "phone_property_value",
         "start": 43,
         "end": 50,
-        "role": "O",
         "value": "bao lâu",
         "extractor": "DIETClassifier"
       }
@@ -261,7 +212,6 @@
         "entity": "phone_property",
         "start": 4,
         "end": 11,
-        "role": "O",
         "value": "trả góp",
         "extractor": "DIETClassifier"
       },
@@ -269,7 +219,6 @@
         "entity": "phone_name",
         "start": 12,
         "end": 24,
-        "role": "O",
         "value": "Realme 3 Pro",
         "extractor": "DIETClassifier"
       },
@@ -277,8 +226,60 @@
         "entity": "phone_property",
         "start": 25,
         "end": 28,
-        "role": "O",
         "value": "giá",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Samsung Galaxy A20s phiên bản 64G có sạc nhanh. Vậy sạc trong bao lâu thì đầy pin",
+    "entities": [
+      {
+        "start": 0,
+        "end": 19,
+        "value": "Samsung Galaxy A20s",
+        "entity": "phone_name"
+      },
+      {
+        "start": 52,
+        "end": 55,
+        "value": "sạc",
+        "entity": "phone_property"
+      },
+      {
+        "start": 62,
+        "end": 69,
+        "value": "bao lâu",
+        "entity": "phone_property_value"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 0,
+        "end": 19,
+        "value": "Samsung Galaxy A20s",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 37,
+        "end": 40,
+        "value": "sạc",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 52,
+        "end": 55,
+        "value": "sạc",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property_value",
+        "start": 62,
+        "end": 69,
+        "value": "bao lâu",
         "extractor": "DIETClassifier"
       }
     ]
@@ -303,16 +304,14 @@
       {
         "entity": "phone_name",
         "start": 4,
-        "end": 10,
-        "role": "O",
-        "value": "Realme",
+        "end": 12,
+        "value": "Realme 5",
         "extractor": "DIETClassifier"
       },
       {
         "entity": "phone_property",
         "start": 13,
         "end": 16,
-        "role": "O",
         "value": "sạc",
         "extractor": "DIETClassifier"
       },
@@ -320,43 +319,7 @@
         "entity": "phone_property_value",
         "start": 17,
         "end": 26,
-        "role": "O",
         "value": "mấy tiếng",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "Nokia 110 Danh bạ bao nhiêu số ạ",
-    "entities": [
-      {
-        "start": 0,
-        "end": 9,
-        "value": "Nokia 110",
-        "entity": "phone_name"
-      },
-      {
-        "start": 18,
-        "end": 27,
-        "value": "bao nhiêu",
-        "entity": "phone_property_value"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "phone_name",
-        "start": 0,
-        "end": 5,
-        "role": "O",
-        "value": "Nokia",
-        "extractor": "DIETClassifier"
-      },
-      {
-        "entity": "phone_property_value",
-        "start": 18,
-        "end": 27,
-        "role": "O",
-        "value": "bao nhiêu",
         "extractor": "DIETClassifier"
       }
     ]
@@ -382,7 +345,6 @@
         "entity": "phone_property",
         "start": 15,
         "end": 18,
-        "role": "O",
         "value": "sạc",
         "extractor": "DIETClassifier"
       },
@@ -390,7 +352,6 @@
         "entity": "phone_name",
         "start": 28,
         "end": 37,
-        "role": "O",
         "value": "iPhone 11",
         "extractor": "DIETClassifier"
       },
@@ -398,8 +359,40 @@
         "entity": "phone_property",
         "start": 48,
         "end": 57,
-        "role": "O",
         "value": "sạc nhanh",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Máy Samsung Galaxy A7 có chức năng sạc không dây không nhỉ?",
+    "entities": [
+      {
+        "start": 4,
+        "end": 21,
+        "value": "Samsung Galaxy A7",
+        "entity": "phone_name"
+      },
+      {
+        "start": 35,
+        "end": 48,
+        "value": "sạc không dây",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 4,
+        "end": 21,
+        "value": "Samsung Galaxy A7",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 35,
+        "end": 54,
+        "value": "sạc không dây không",
         "extractor": "DIETClassifier"
       }
     ]
@@ -425,7 +418,6 @@
         "entity": "phone_name",
         "start": 11,
         "end": 30,
-        "role": "O",
         "value": "Xiaomi Redmi Note 8",
         "extractor": "DIETClassifier"
       },
@@ -433,7 +425,6 @@
         "entity": "phone_property",
         "start": 34,
         "end": 47,
-        "role": "O",
         "value": "ghi màn hình",
         "extractor": "DIETClassifier"
       },
@@ -441,19 +432,24 @@
         "entity": "phone_name",
         "start": 52,
         "end": 58,
-        "role": "O",
         "value": "iPhone",
         "extractor": "DIETClassifier"
       }
     ]
   },
   {
-    "text": "Máy Mobell M889 này có chống ồn không?",
+    "text": "Máy Samsung Galaxy A20 khi mua mới có nguyên seal nguyên tem k ạ",
     "entities": [
       {
-        "start": 23,
-        "end": 31,
-        "value": "chống ồn",
+        "start": 4,
+        "end": 22,
+        "value": "Samsung Galaxy A20",
+        "entity": "phone_name"
+      },
+      {
+        "start": 38,
+        "end": 49,
+        "value": "nguyên seal",
         "entity": "phone_property"
       }
     ],
@@ -461,43 +457,156 @@
       {
         "entity": "phone_name",
         "start": 4,
-        "end": 10,
-        "role": "O",
-        "value": "Mobell",
+        "end": 22,
+        "value": "Samsung Galaxy A20",
         "extractor": "DIETClassifier"
       },
       {
         "entity": "phone_property",
-        "start": 23,
-        "end": 31,
-        "role": "O",
-        "value": "chống ồn",
+        "start": 38,
+        "end": 56,
+        "value": "nguyên seal nguyên",
         "extractor": "DIETClassifier"
       }
     ]
   },
   {
-    "text": "OPPO A5s và Samsung Galaxy A30s chip nào chơi game mượt ạ",
+    "text": "Điện thoại Coolpad N3C này chơi thử game free fire cấu hình thật được không vậy shop",
     "entities": [
       {
-        "start": 0,
-        "end": 8,
-        "value": "OPPO A5s",
-        "entity": "phone_name",
-        "role": "first"
-      },
-      {
-        "start": 12,
-        "end": 31,
-        "value": "Samsung Galaxy A30s",
-        "entity": "phone_name",
-        "role": "second"
+        "start": 11,
+        "end": 22,
+        "value": "Coolpad N3C",
+        "entity": "phone_name"
       },
       {
         "start": 41,
         "end": 50,
-        "value": "chơi game",
+        "value": "free fire",
         "entity": "phone_property"
+      },
+      {
+        "start": 51,
+        "end": 59,
+        "value": "cấu hình",
+        "entity": "phone_property_value"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 11,
+        "end": 22,
+        "value": "Coolpad N3C",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 36,
+        "end": 50,
+        "value": "game free fire",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property_value",
+        "start": 51,
+        "end": 59,
+        "value": "cấu hình",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Máy Coolpad N3C này có chặn tin nhắn và chặn cuộc gọi ko",
+    "entities": [
+      {
+        "start": 4,
+        "end": 15,
+        "value": "Coolpad N3C",
+        "entity": "phone_name"
+      },
+      {
+        "start": 23,
+        "end": 36,
+        "value": "chặn tin nhắn",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 4,
+        "end": 15,
+        "value": "Coolpad N3C",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 23,
+        "end": 36,
+        "value": "chặn tin nhắn",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 40,
+        "end": 44,
+        "value": "chặn",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Giúp em so sánh Realme 5 Pro vs Realme 6 với ạ",
+    "entities": [
+      {
+        "start": 16,
+        "end": 28,
+        "value": "Realme 5 Pro",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 32,
+        "end": 40,
+        "value": "Realme 6",
+        "entity": "phone_name",
+        "role": "second"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 16,
+        "end": 28,
+        "value": "Realme 5 Pro",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 32,
+        "end": 40,
+        "value": "Realme 6",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Vivo Y11 với Xiaomi Redmi 8 con nào hơn ạ",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Vivo Y11",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 13,
+        "end": 27,
+        "value": "Xiaomi Redmi 8",
+        "entity": "phone_name",
+        "role": "second"
       }
     ],
     "predicted_entities": [
@@ -505,32 +614,167 @@
         "entity": "phone_name",
         "start": 0,
         "end": 8,
-        "role": "first",
-        "value": "OPPO A5s",
+        "value": "Vivo Y11",
         "extractor": "DIETClassifier"
       },
       {
         "entity": "phone_name",
-        "start": 12,
-        "end": 31,
-        "role": "second",
-        "value": "Samsung Galaxy A30s",
+        "start": 13,
+        "end": 27,
+        "value": "Xiaomi Redmi 8",
         "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Vivo Y11 này với Samsung Galaxy A10s cái nào tốt hơn",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Vivo Y11",
+        "entity": "phone_name",
+        "role": "first"
       },
       {
-        "entity": "phone_property",
-        "start": 32,
+        "start": 17,
         "end": 36,
-        "role": "O",
-        "value": "chip",
+        "value": "Samsung Galaxy A10s",
+        "entity": "phone_name",
+        "role": "second"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 0,
+        "end": 8,
+        "value": "Vivo Y11",
         "extractor": "DIETClassifier"
       },
       {
-        "entity": "phone_property",
-        "start": 41,
+        "entity": "phone_name",
+        "start": 17,
+        "end": 36,
+        "value": "Samsung Galaxy A10s",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Realme C2 với Vivo Y11 cái nào tốt hơn ạ",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "Realme C2",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 14,
+        "end": 22,
+        "value": "Vivo Y11",
+        "entity": "phone_name",
+        "role": "second"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 0,
+        "end": 9,
+        "value": "Realme C2",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 14,
+        "end": 22,
+        "value": "Vivo Y11",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "em đang phân vân là không biết nên mua con Samsung Note 10 Lite này hay mua con iPhone 8 Plus vì em thì thích SS còn bạn gái em thì thích IP, anh.chị tư vấn giúp em vs ạ, Nếu hợp lí thì em mua cả 2 luôn.",
+    "entities": [
+      {
+        "start": 43,
+        "end": 63,
+        "value": "Samsung Note 10 Lite",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 80,
+        "end": 93,
+        "value": "iPhone 8 Plus",
+        "entity": "phone_name",
+        "role": "second"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 43,
+        "end": 63,
+        "value": "Samsung Note 10 Lite",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 80,
+        "end": 93,
+        "value": "iPhone 8 Plus",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Cho em hỏi cấu hình của iPhone 11 và iPhone Xs Max",
+    "entities": [
+      {
+        "start": 11,
+        "end": 19,
+        "value": "cấu hình",
+        "entity": "phone_property"
+      },
+      {
+        "start": 24,
+        "end": 33,
+        "value": "iPhone 11",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 37,
         "end": 50,
-        "role": "O",
-        "value": "chơi game",
+        "value": "iPhone Xs Max",
+        "entity": "phone_name",
+        "role": "second"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_property",
+        "start": 11,
+        "end": 19,
+        "value": "cấu hình",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 24,
+        "end": 33,
+        "value": "iPhone 11",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 37,
+        "end": 50,
+        "value": "iPhone Xs Max",
         "extractor": "DIETClassifier"
       }
     ]
@@ -570,7 +814,6 @@
         "entity": "phone_property",
         "start": 13,
         "end": 17,
-        "role": "O",
         "value": "chip",
         "extractor": "DIETClassifier"
       },
@@ -578,7 +821,6 @@
         "entity": "phone_name",
         "start": 26,
         "end": 35,
-        "role": "second",
         "value": "iPhone 11",
         "extractor": "DIETClassifier"
       },
@@ -586,7 +828,6 @@
         "entity": "phone_property",
         "start": 39,
         "end": 43,
-        "role": "O",
         "value": "chip",
         "extractor": "DIETClassifier"
       },
@@ -594,7 +835,6 @@
         "entity": "phone_name",
         "start": 52,
         "end": 79,
-        "role": "second",
         "value": "Samsung Galaxy Note 10 Lite",
         "extractor": "DIETClassifier"
       }
@@ -629,7 +869,6 @@
         "entity": "phone_name",
         "start": 4,
         "end": 21,
-        "role": "first",
         "value": "iPhone 11 Pro Max",
         "extractor": "DIETClassifier"
       },
@@ -637,7 +876,6 @@
         "entity": "phone_name",
         "start": 32,
         "end": 45,
-        "role": "second",
         "value": "iPhone Xs Max",
         "extractor": "DIETClassifier"
       },
@@ -645,7 +883,6 @@
         "entity": "phone_property",
         "start": 56,
         "end": 65,
-        "role": "O",
         "value": "chụp ảnh",
         "extractor": "DIETClassifier"
       },
@@ -653,26 +890,25 @@
         "entity": "phone_property",
         "start": 69,
         "end": 70,
-        "role": "O",
         "value": "p",
         "extractor": "DIETClassifier"
       }
     ]
   },
   {
-    "text": "em đang phân vân là không biết nên mua con Samsung Note 10 Lite này hay mua con iPhone 8 Plus vì em thì thích SS còn bạn gái em thì thích IP, anh.chị tư vấn giúp em vs ạ, Nếu hợp lí thì em mua cả 2 luôn.",
+    "text": "Giữa Samsung Galaxy A51 với Samsung Galaxy A50s thì cái nào tốt hơn nhỉ",
     "entities": [
       {
-        "start": 43,
-        "end": 63,
-        "value": "Samsung Note 10 Lite",
+        "start": 5,
+        "end": 23,
+        "value": "Samsung Galaxy A51",
         "entity": "phone_name",
         "role": "first"
       },
       {
-        "start": 80,
-        "end": 93,
-        "value": "iPhone 8 Plus",
+        "start": 28,
+        "end": 47,
+        "value": "Samsung Galaxy A50s",
         "entity": "phone_name",
         "role": "second"
       }
@@ -680,18 +916,815 @@
     "predicted_entities": [
       {
         "entity": "phone_name",
-        "start": 43,
-        "end": 63,
-        "role": "second",
-        "value": "Samsung Note 10 Lite",
+        "start": 5,
+        "end": 23,
+        "value": "Samsung Galaxy A51",
         "extractor": "DIETClassifier"
       },
       {
         "entity": "phone_name",
-        "start": 80,
-        "end": 93,
-        "role": "second",
+        "start": 28,
+        "end": 47,
+        "value": "Samsung Galaxy A50s",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Realme 5 với Xiaomi Redmi Note 8 cái nào nhỉnh hơn ạ",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Realme 5",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 13,
+        "end": 32,
+        "value": "Xiaomi Redmi Note 8",
+        "entity": "phone_name",
+        "role": "second"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 0,
+        "end": 8,
+        "value": "Realme 5",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 13,
+        "end": 32,
+        "value": "Xiaomi Redmi Note 8",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Samsung Galaxy A30s và Samsung Galaxy A20s vậy nên chọn máy nào",
+    "entities": [
+      {
+        "start": 0,
+        "end": 19,
+        "value": "Samsung Galaxy A30s",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 23,
+        "end": 42,
+        "value": "Samsung Galaxy A20s",
+        "entity": "phone_name",
+        "role": "second"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 0,
+        "end": 19,
+        "value": "Samsung Galaxy A30s",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 23,
+        "end": 42,
+        "value": "Samsung Galaxy A20s",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Xiaomi Redmi 8 với Xiaomi Redmi 7 con nào chơi game ngon hơn?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "Xiaomi Redmi 8",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 19,
+        "end": 33,
+        "value": "Xiaomi Redmi 7",
+        "entity": "phone_name",
+        "role": "second"
+      },
+      {
+        "start": 42,
+        "end": 51,
+        "value": "chơi game",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 0,
+        "end": 14,
+        "value": "Xiaomi Redmi 8",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 19,
+        "end": 33,
+        "value": "Xiaomi Redmi 7",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 42,
+        "end": 51,
+        "value": "chơi game",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Xiaomi Redmi 8 với con Samsung Galaxy A10s con nào chơi liên quân tốt hơn ạ?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "Xiaomi Redmi 8",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 23,
+        "end": 42,
+        "value": "Samsung Galaxy A10s",
+        "entity": "phone_name",
+        "role": "second"
+      },
+      {
+        "start": 56,
+        "end": 65,
+        "value": "liên quân",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 0,
+        "end": 14,
+        "value": "Xiaomi Redmi 8",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 23,
+        "end": 42,
+        "value": "Samsung Galaxy A10s",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 56,
+        "end": 65,
+        "value": "liên quân",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Samsung Galaxy A51 với BlackBerry KEYone cái nào chơi game xem phim mượt hơn vậy",
+    "entities": [
+      {
+        "start": 0,
+        "end": 18,
+        "value": "Samsung Galaxy A51",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 23,
+        "end": 40,
+        "value": "BlackBerry KEYone",
+        "entity": "phone_name",
+        "role": "second"
+      },
+      {
+        "start": 49,
+        "end": 58,
+        "value": "chơi game",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 0,
+        "end": 18,
+        "value": "Samsung Galaxy A51",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 23,
+        "end": 40,
+        "value": "BlackBerry KEYone",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 49,
+        "end": 58,
+        "value": "chơi game",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Huawei P30 Lite và Xiaomi Note 8 Pro cái nào đẹp và dùng tốt hơn ạ, xin Qtv cho mình xin cái so sánh",
+    "entities": [
+      {
+        "start": 0,
+        "end": 15,
+        "value": "Huawei P30 Lite",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 19,
+        "end": 36,
+        "value": "Xiaomi Note 8 Pro",
+        "entity": "phone_name",
+        "role": "second"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 0,
+        "end": 15,
+        "value": "Huawei P30 Lite",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 19,
+        "end": 36,
+        "value": "Xiaomi Note 8 Pro",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Xiaomi Redmi Note 8 Pro với cái Xiaomi Mi 9 SE cái nào chơi game lướt web mượt hơn vậy",
+    "entities": [
+      {
+        "start": 0,
+        "end": 23,
+        "value": "Xiaomi Redmi Note 8 Pro",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 34,
+        "end": 48,
+        "value": "Xiaomi Mi 9 SE",
+        "entity": "phone_name",
+        "role": "second"
+      },
+      {
+        "start": 59,
+        "end": 68,
+        "value": "chơi game",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 0,
+        "end": 23,
+        "value": "Xiaomi Redmi Note 8 Pro",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 34,
+        "end": 48,
+        "value": "Xiaomi Mi 9 SE",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 59,
+        "end": 68,
+        "value": "chơi game",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Máy Realme 6 Pro và Realme 5 Pro cái nào chơi game ngon hơn",
+    "entities": [
+      {
+        "start": 4,
+        "end": 16,
+        "value": "Realme 6 Pro",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 20,
+        "end": 32,
+        "value": "Realme 5 Pro",
+        "entity": "phone_name",
+        "role": "second"
+      },
+      {
+        "start": 41,
+        "end": 50,
+        "value": "chơi game",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 4,
+        "end": 16,
+        "value": "Realme 6 Pro",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 20,
+        "end": 32,
+        "value": "Realme 5 Pro",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 41,
+        "end": 50,
+        "value": "chơi game",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "OPPO A7 vs OPPO A5s chip nào chơi game mượt hơn ạ",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "OPPO A7",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 11,
+        "end": 19,
+        "value": "OPPO A5s",
+        "entity": "phone_name",
+        "role": "second"
+      },
+      {
+        "start": 29,
+        "end": 38,
+        "value": "chơi game",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 0,
+        "end": 7,
+        "value": "OPPO A7",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 11,
+        "end": 19,
+        "value": "OPPO A5s",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 29,
+        "end": 38,
+        "value": "chơi game",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "OPPO A5s và Samsung Galaxy A30s chip nào chơi game mượt ạ",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "OPPO A5s",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 12,
+        "end": 31,
+        "value": "Samsung Galaxy A30s",
+        "entity": "phone_name",
+        "role": "second"
+      },
+      {
+        "start": 41,
+        "end": 50,
+        "value": "chơi game",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 0,
+        "end": 8,
+        "value": "OPPO A5s",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 12,
+        "end": 31,
+        "value": "Samsung Galaxy A30s",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 41,
+        "end": 50,
+        "value": "chơi game",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "OPPO A5s với Vivo Y12 nào ngon hơn anh",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "OPPO A5s",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 13,
+        "end": 21,
+        "value": "Vivo Y12",
+        "entity": "phone_name",
+        "role": "second"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 0,
+        "end": 8,
+        "value": "OPPO A5s",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 13,
+        "end": 21,
+        "value": "Vivo Y12",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Xiaomi Redmi 7 với Realme 5 thì con nào chiến game ngon hơn ạ",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "Xiaomi Redmi 7",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 19,
+        "end": 27,
+        "value": "Realme 5",
+        "entity": "phone_name",
+        "role": "second"
+      },
+      {
+        "start": 46,
+        "end": 50,
+        "value": "game",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 0,
+        "end": 14,
+        "value": "Xiaomi Redmi 7",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 19,
+        "end": 27,
+        "value": "Realme 5",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 46,
+        "end": 50,
+        "value": "game",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "OPPO A1K so với Vivo Y19 thì cái nào chơi game khỏe hơn",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "OPPO A1K",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 16,
+        "end": 24,
+        "value": "Vivo Y19",
+        "entity": "phone_name",
+        "role": "second"
+      },
+      {
+        "start": 37,
+        "end": 46,
+        "value": "chơi game",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 0,
+        "end": 8,
+        "value": "OPPO A1K",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 16,
+        "end": 24,
+        "value": "Vivo Y19",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 37,
+        "end": 46,
+        "value": "chơi game",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "OPPO A1K này chơi game khỏe hơn OPPO A31 ko ạ",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "OPPO A1K",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 13,
+        "end": 22,
+        "value": "chơi game",
+        "entity": "phone_property"
+      },
+      {
+        "start": 32,
+        "end": 40,
+        "value": "OPPO A31",
+        "entity": "phone_name",
+        "role": "second"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 0,
+        "end": 8,
+        "value": "OPPO A1K",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 13,
+        "end": 22,
+        "value": "chơi game",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 32,
+        "end": 40,
+        "value": "OPPO A31",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Cho em hỏi cấu hình của iPhone 8 Plus so với iPhone SE với ạ",
+    "entities": [
+      {
+        "start": 11,
+        "end": 19,
+        "value": "cấu hình",
+        "entity": "phone_property"
+      },
+      {
+        "start": 24,
+        "end": 37,
         "value": "iPhone 8 Plus",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 45,
+        "end": 54,
+        "value": "iPhone SE",
+        "entity": "phone_name",
+        "role": "second"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_property",
+        "start": 11,
+        "end": 19,
+        "value": "cấu hình",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 24,
+        "end": 37,
+        "value": "iPhone 8 Plus",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 45,
+        "end": 54,
+        "value": "iPhone SE",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Cho em hỏi cấu hình của iPhone 8 Plus và iPhone 7 Plus với ạ",
+    "entities": [
+      {
+        "start": 11,
+        "end": 19,
+        "value": "cấu hình",
+        "entity": "phone_property"
+      },
+      {
+        "start": 24,
+        "end": 37,
+        "value": "iPhone 8 Plus",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 41,
+        "end": 54,
+        "value": "iPhone 7 Plus",
+        "entity": "phone_name",
+        "role": "second"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_property",
+        "start": 11,
+        "end": 19,
+        "value": "cấu hình",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 24,
+        "end": 37,
+        "value": "iPhone 8 Plus",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 41,
+        "end": 54,
+        "value": "iPhone 7 Plus",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Samsung Galaxy Note 10 Lite tốt hơn iPhone Xs Max về hiệu năng và chụp ảnh phải k",
+    "entities": [
+      {
+        "start": 0,
+        "end": 27,
+        "value": "Samsung Galaxy Note 10 Lite",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 36,
+        "end": 49,
+        "value": "iPhone Xs Max",
+        "entity": "phone_name",
+        "role": "second"
+      },
+      {
+        "start": 66,
+        "end": 74,
+        "value": "chụp ảnh",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 0,
+        "end": 27,
+        "value": "Samsung Galaxy Note 10 Lite",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 36,
+        "end": 49,
+        "value": "iPhone Xs Max",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 66,
+        "end": 74,
+        "value": "chụp ảnh",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Samsung Galaxy A50s với Samsung Galaxy A51 nên chọn máy nào vậy admin",
+    "entities": [
+      {
+        "start": 0,
+        "end": 19,
+        "value": "Samsung Galaxy A50s",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 24,
+        "end": 42,
+        "value": "Samsung Galaxy A51",
+        "entity": "phone_name",
+        "role": "second"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 0,
+        "end": 19,
+        "value": "Samsung Galaxy A50s",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 24,
+        "end": 42,
+        "value": "Samsung Galaxy A51",
         "extractor": "DIETClassifier"
       }
     ]
@@ -731,7 +1764,6 @@
         "entity": "phone_property",
         "start": 13,
         "end": 17,
-        "role": "O",
         "value": "chip",
         "extractor": "DIETClassifier"
       },
@@ -739,7 +1771,6 @@
         "entity": "phone_name",
         "start": 26,
         "end": 35,
-        "role": "second",
         "value": "iPhone 11",
         "extractor": "DIETClassifier"
       },
@@ -747,7 +1778,6 @@
         "entity": "phone_property",
         "start": 39,
         "end": 43,
-        "role": "O",
         "value": "chip",
         "extractor": "DIETClassifier"
       },
@@ -755,8 +1785,509 @@
         "entity": "phone_name",
         "start": 52,
         "end": 63,
-        "role": "second",
         "value": "OPPO Find X",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Cho mình hỏi giữa con oppo a9 và Samsung Galaxy A70 thì con nào chơi liên quân mượt max setting mượt hơn vậy",
+    "entities": [
+      {
+        "start": 22,
+        "end": 29,
+        "value": "oppo a9",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 33,
+        "end": 51,
+        "value": "Samsung Galaxy A70",
+        "entity": "phone_name",
+        "role": "second"
+      },
+      {
+        "start": 69,
+        "end": 78,
+        "value": "liên quân",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 22,
+        "end": 29,
+        "value": "oppo a9",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 33,
+        "end": 51,
+        "value": "Samsung Galaxy A70",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 69,
+        "end": 78,
+        "value": "liên quân",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Chip p60 trên oppo reno3 và chip p70 trên ViVo V19 Neo thì con nào mạnh hơn ạ",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "Chip",
+        "entity": "phone_property"
+      },
+      {
+        "start": 14,
+        "end": 24,
+        "value": "oppo reno3",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 28,
+        "end": 32,
+        "value": "chip",
+        "entity": "phone_property"
+      },
+      {
+        "start": 42,
+        "end": 54,
+        "value": "ViVo V19 Neo",
+        "entity": "phone_name",
+        "role": "second"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_property",
+        "start": 0,
+        "end": 4,
+        "value": "Chip",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 14,
+        "end": 24,
+        "value": "oppo reno3",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 28,
+        "end": 32,
+        "value": "chip",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 42,
+        "end": 54,
+        "value": "ViVo V19 Neo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Cho em hỏi là cái nokia 5.3 với cái vsmart active 3 máy nào chơi tốt hơn vậy",
+    "entities": [
+      {
+        "start": 18,
+        "end": 27,
+        "value": "nokia 5.3",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 36,
+        "end": 51,
+        "value": "vsmart active 3",
+        "entity": "phone_name",
+        "role": "second"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 18,
+        "end": 27,
+        "value": "nokia 5.3",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 36,
+        "end": 51,
+        "value": "vsmart active 3",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Giữa oppo a5 với realme 5 pro cái nào sẽ chiến game tốt hơn ạ?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 12,
+        "value": "oppo a5",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 17,
+        "end": 29,
+        "value": "realme 5 pro",
+        "entity": "phone_name",
+        "role": "second"
+      },
+      {
+        "start": 41,
+        "end": 51,
+        "value": "chiến game",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 5,
+        "end": 12,
+        "value": "oppo a5",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 17,
+        "end": 29,
+        "value": "realme 5 pro",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 41,
+        "end": 51,
+        "value": "chiến game",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Cho em hỏi realme 6 pro với Samsung Galaxy A30s cái nào mạnh hơn về chơi game với bin trâu ạ",
+    "entities": [
+      {
+        "start": 11,
+        "end": 23,
+        "value": "realme 6 pro",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 28,
+        "end": 47,
+        "value": "Samsung Galaxy A30s",
+        "entity": "phone_name",
+        "role": "second"
+      },
+      {
+        "start": 68,
+        "end": 77,
+        "value": "chơi game",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 11,
+        "end": 23,
+        "value": "realme 6 pro",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 28,
+        "end": 47,
+        "value": "Samsung Galaxy A30s",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 68,
+        "end": 77,
+        "value": "chơi game",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Giữa Xiaomi Redmi Note 8 Pro và Realme 5s này cái nào sẽ tốt hơn và giá tiền hợp lý hơn",
+    "entities": [
+      {
+        "start": 5,
+        "end": 28,
+        "value": "Xiaomi Redmi Note 8 Pro",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 32,
+        "end": 41,
+        "value": "Realme 5s",
+        "entity": "phone_name",
+        "role": "second"
+      },
+      {
+        "start": 68,
+        "end": 71,
+        "value": "giá",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 5,
+        "end": 28,
+        "value": "Xiaomi Redmi Note 8 Pro",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 32,
+        "end": 41,
+        "value": "Realme 5s",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 68,
+        "end": 71,
+        "value": "giá",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Con Realme 6 với Huawei P30 Lite con nào tốt hơn về chụp hình chơi game",
+    "entities": [
+      {
+        "start": 4,
+        "end": 12,
+        "value": "Realme 6",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 17,
+        "end": 32,
+        "value": "Huawei P30 Lite",
+        "entity": "phone_name",
+        "role": "second"
+      },
+      {
+        "start": 62,
+        "end": 71,
+        "value": "chơi game",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 4,
+        "end": 12,
+        "value": "Realme 6",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 17,
+        "end": 32,
+        "value": "Huawei P30 Lite",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 62,
+        "end": 71,
+        "value": "chơi game",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Đt Oppo A92 với đt OPPO A52 cấu hình máy nào mạnh hơn vậy",
+    "entities": [
+      {
+        "start": 3,
+        "end": 11,
+        "value": "Oppo A92",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 19,
+        "end": 27,
+        "value": "OPPO A52",
+        "entity": "phone_name",
+        "role": "second"
+      },
+      {
+        "start": 28,
+        "end": 36,
+        "value": "cấu hình",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 3,
+        "end": 11,
+        "value": "Oppo A92",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 19,
+        "end": 27,
+        "value": "OPPO A52",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 28,
+        "end": 36,
+        "value": "cấu hình",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Máy Samsung Galaxy A80 này với iphone 8 plus cái nào hơn nhỉ",
+    "entities": [
+      {
+        "start": 4,
+        "end": 22,
+        "value": "Samsung Galaxy A80",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 31,
+        "end": 44,
+        "value": "iphone 8 plus",
+        "entity": "phone_name",
+        "role": "second"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 4,
+        "end": 22,
+        "value": "Samsung Galaxy A80",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 31,
+        "end": 44,
+        "value": "iphone 8 plus",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Samsung Galaxy A50 vs OPPO Reno2 F con nào tốt hơn",
+    "entities": [
+      {
+        "start": 0,
+        "end": 18,
+        "value": "Samsung Galaxy A50",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 22,
+        "end": 34,
+        "value": "OPPO Reno2 F",
+        "entity": "phone_name",
+        "role": "second"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 0,
+        "end": 18,
+        "value": "Samsung Galaxy A50",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 22,
+        "end": 34,
+        "value": "OPPO Reno2 F",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Samsung Galaxy A21s với Samsung Galaxy A30s máy nào chụp hình đẹp hơn vậy anh chị?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 19,
+        "value": "Samsung Galaxy A21s",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 24,
+        "end": 43,
+        "value": "Samsung Galaxy A30s",
+        "entity": "phone_name",
+        "role": "second"
+      },
+      {
+        "start": 52,
+        "end": 61,
+        "value": "chụp hình",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 0,
+        "end": 19,
+        "value": "Samsung Galaxy A21s",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 24,
+        "end": 43,
+        "value": "Samsung Galaxy A30s",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 52,
+        "end": 61,
+        "value": "chụp hình",
         "extractor": "DIETClassifier"
       }
     ]
@@ -790,7 +2321,6 @@
         "entity": "phone_name",
         "start": 11,
         "end": 23,
-        "role": "second",
         "value": "Realme 6 Pro",
         "extractor": "DIETClassifier"
       },
@@ -798,7 +2328,6 @@
         "entity": "phone_name",
         "start": 28,
         "end": 51,
-        "role": "second",
         "value": "Xiaomi Redmi Note 9 Pro",
         "extractor": "DIETClassifier"
       },
@@ -806,7 +2335,546 @@
         "entity": "phone_property",
         "start": 72,
         "end": 81,
-        "role": "O",
+        "value": "chơi game",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Xiaomi Note 10 Pro này so với iPhone Xs thì máy nào ngon hơn",
+    "entities": [
+      {
+        "start": 0,
+        "end": 18,
+        "value": "Xiaomi Note 10 Pro",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 30,
+        "end": 39,
+        "value": "iPhone Xs",
+        "entity": "phone_name",
+        "role": "second"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 0,
+        "end": 18,
+        "value": "Xiaomi Note 10 Pro",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 30,
+        "end": 39,
+        "value": "iPhone Xs 64GB",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "cho hỏi con Xiaomi Redmi Note 9s vs Realme 6 con nào chơi liên quân ngon hơn",
+    "entities": [
+      {
+        "start": 12,
+        "end": 32,
+        "value": "Xiaomi Redmi Note 9s",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 36,
+        "end": 44,
+        "value": "Realme 6",
+        "entity": "phone_name",
+        "role": "second"
+      },
+      {
+        "start": 58,
+        "end": 67,
+        "value": "liên quân",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 12,
+        "end": 32,
+        "value": "Xiaomi Redmi Note 9s",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 36,
+        "end": 44,
+        "value": "Realme 6",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 58,
+        "end": 67,
+        "value": "liên quân",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Xiaomi Redmi 8a so với Realme 5i thì con chip nào mạnh hơn ạ",
+    "entities": [
+      {
+        "start": 0,
+        "end": 15,
+        "value": "Xiaomi Redmi 8a",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 23,
+        "end": 32,
+        "value": "Realme 5i",
+        "entity": "phone_name",
+        "role": "second"
+      },
+      {
+        "start": 41,
+        "end": 45,
+        "value": "chip",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 0,
+        "end": 15,
+        "value": "Xiaomi Redmi 8a",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 23,
+        "end": 32,
+        "value": "Realme 5i",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 41,
+        "end": 45,
+        "value": "chip",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Cho hỏi con OPPO A31 với Samsung Galaxy A21s thì con nào chơi game mượt hơn",
+    "entities": [
+      {
+        "start": 12,
+        "end": 20,
+        "value": "OPPO A31",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 25,
+        "end": 44,
+        "value": "Samsung Galaxy A21s",
+        "entity": "phone_name",
+        "role": "second"
+      },
+      {
+        "start": 57,
+        "end": 66,
+        "value": "chơi game",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 12,
+        "end": 20,
+        "value": "OPPO A31",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 25,
+        "end": 44,
+        "value": "Samsung Galaxy A21s",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 57,
+        "end": 66,
+        "value": "chơi game",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Máy OPPO A31 với OPPO A5 máy nào chơi game tốt hơn ạ",
+    "entities": [
+      {
+        "start": 4,
+        "end": 12,
+        "value": "OPPO A31",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 17,
+        "end": 24,
+        "value": "OPPO A5",
+        "entity": "phone_name",
+        "role": "second"
+      },
+      {
+        "start": 33,
+        "end": 42,
+        "value": "chơi game",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 4,
+        "end": 12,
+        "value": "OPPO A31",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 17,
+        "end": 24,
+        "value": "OPPO A5",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 33,
+        "end": 42,
+        "value": "chơi game",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Realme C3 voi Samsung Galaxy A20s con nao chơi game tot hon vay ad...",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "Realme C3",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 14,
+        "end": 33,
+        "value": "Samsung Galaxy A20s",
+        "entity": "phone_name",
+        "role": "second"
+      },
+      {
+        "start": 42,
+        "end": 51,
+        "value": "chơi game",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 0,
+        "end": 9,
+        "value": "Realme C3",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 14,
+        "end": 33,
+        "value": "Samsung Galaxy A20s",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 42,
+        "end": 51,
+        "value": "chơi game",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "máy OPPO A12 với Vivo U10 thì cái nào chơi game tốt hơn vậy",
+    "entities": [
+      {
+        "start": 4,
+        "end": 12,
+        "value": "OPPO A12",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 17,
+        "end": 25,
+        "value": "Vivo U10",
+        "entity": "phone_name",
+        "role": "second"
+      },
+      {
+        "start": 38,
+        "end": 47,
+        "value": "chơi game",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 4,
+        "end": 12,
+        "value": "OPPO A12",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 17,
+        "end": 25,
+        "value": "Vivo U10",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 38,
+        "end": 47,
+        "value": "chơi game",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Vivo Y30 với đien thoại OPPO A31 thì cái nào ngon hơn vậy",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Vivo Y30",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 24,
+        "end": 32,
+        "value": "OPPO A31",
+        "entity": "phone_name",
+        "role": "second"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 0,
+        "end": 8,
+        "value": "Vivo Y30",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 24,
+        "end": 32,
+        "value": "OPPO A31",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tôi Đang phân vân giữa chiếc điện thoại Nokia 2.3 vs Nokia 3.2 k biết chọn con nào",
+    "entities": [
+      {
+        "start": 40,
+        "end": 49,
+        "value": "Nokia 2.3",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 53,
+        "end": 62,
+        "value": "Nokia 3.2",
+        "entity": "phone_name",
+        "role": "second"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 40,
+        "end": 49,
+        "value": "Nokia 2.3",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 53,
+        "end": 62,
+        "value": "Nokia 3.2",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "CPU của Nokia 5.3 với Samsung Galaxy A11 con nào mạnh hơn vậy?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "CPU",
+        "entity": "phone_property"
+      },
+      {
+        "start": 8,
+        "end": 17,
+        "value": "Nokia 5.3",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 22,
+        "end": 40,
+        "value": "Samsung Galaxy A11",
+        "entity": "phone_name",
+        "role": "second"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_property",
+        "start": 0,
+        "end": 3,
+        "value": "CPU",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 8,
+        "end": 17,
+        "value": "Nokia 5.3",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 22,
+        "end": 40,
+        "value": "Samsung Galaxy A11",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Con Vsmart Active 3 voi Realme 5i con nào ngon hơn khi chơi liên quân vậy",
+    "entities": [
+      {
+        "start": 4,
+        "end": 19,
+        "value": "Vsmart Active 3",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 24,
+        "end": 33,
+        "value": "Realme 5i",
+        "entity": "phone_name",
+        "role": "second"
+      },
+      {
+        "start": 60,
+        "end": 69,
+        "value": "liên quân",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 4,
+        "end": 19,
+        "value": "Vsmart Active 3",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 24,
+        "end": 33,
+        "value": "Realme 5i",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 60,
+        "end": 69,
+        "value": "liên quân",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Con Vsmart Joy 3 này vs Vsmart Star 4 thì con nào chơi game nhĩnh hơn",
+    "entities": [
+      {
+        "start": 4,
+        "end": 16,
+        "value": "Vsmart Joy 3",
+        "entity": "phone_name",
+        "role": "first"
+      },
+      {
+        "start": 24,
+        "end": 37,
+        "value": "Vsmart Star 4",
+        "entity": "phone_name",
+        "role": "second"
+      },
+      {
+        "start": 50,
+        "end": 59,
+        "value": "chơi game",
+        "entity": "phone_property"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "phone_name",
+        "start": 4,
+        "end": 16,
+        "value": "Vsmart Joy 3",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 24,
+        "end": 37,
+        "value": "Vsmart Star 4",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_property",
+        "start": 50,
+        "end": 59,
         "value": "chơi game",
         "extractor": "DIETClassifier"
       }
@@ -847,7 +2915,6 @@
         "entity": "phone_property",
         "start": 21,
         "end": 25,
-        "role": "O",
         "value": "chip",
         "extractor": "DIETClassifier"
       },
@@ -855,7 +2922,6 @@
         "entity": "phone_name",
         "start": 26,
         "end": 34,
-        "role": "second",
         "value": "OPPO A1K",
         "extractor": "DIETClassifier"
       },
@@ -863,7 +2929,6 @@
         "entity": "phone_property",
         "start": 43,
         "end": 47,
-        "role": "O",
         "value": "chip",
         "extractor": "DIETClassifier"
       },
@@ -871,51 +2936,55 @@
         "entity": "phone_name",
         "start": 48,
         "end": 57,
-        "role": "second",
         "value": "Vivo Y91c",
         "extractor": "DIETClassifier"
       }
     ]
   },
   {
-    "text": "Dạ cho e hỏi pin này xài tầm bao lâu ạ?",
+    "text": "Xiaomi Redmi 8A với Realme C3 con nào tốt hơn để chơi game ạ",
     "entities": [
       {
-        "start": 13,
-        "end": 16,
-        "value": "pin",
-        "entity": "phone_property"
+        "start": 0,
+        "end": 15,
+        "value": "Xiaomi Redmi 8A",
+        "entity": "phone_name",
+        "role": "first"
       },
       {
-        "start": 21,
-        "end": 24,
-        "value": "xài",
-        "entity": "phone_property_value"
+        "start": 20,
+        "end": 29,
+        "value": "Realme C3",
+        "entity": "phone_name",
+        "role": "second"
+      },
+      {
+        "start": 49,
+        "end": 58,
+        "value": "chơi game",
+        "entity": "phone_property"
       }
     ],
     "predicted_entities": [
       {
+        "entity": "phone_name",
+        "start": 0,
+        "end": 15,
+        "value": "Xiaomi Redmi 8A",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "phone_name",
+        "start": 20,
+        "end": 29,
+        "value": "Realme C3",
+        "extractor": "DIETClassifier"
+      },
+      {
         "entity": "phone_property",
-        "start": 13,
-        "end": 16,
-        "role": "O",
-        "value": "pin",
-        "extractor": "DIETClassifier"
-      },
-      {
-        "entity": "phone_property_value",
-        "start": 21,
-        "end": 24,
-        "role": "O",
-        "value": "xài",
-        "extractor": "DIETClassifier"
-      },
-      {
-        "entity": "phone_property_value",
-        "start": 29,
-        "end": 36,
-        "role": "O",
-        "value": "bao lâu",
+        "start": 49,
+        "end": 58,
+        "value": "chơi game",
         "extractor": "DIETClassifier"
       }
     ]
