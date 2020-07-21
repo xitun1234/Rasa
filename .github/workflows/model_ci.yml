@@ -65,7 +65,6 @@ jobs:
         RASA_X_USERNAME: me
 
       run: |
-        
         # Get token
         RASA_X_TOKEN=$(curl -s --header "Content-Type: application/json" \
           --request POST \
