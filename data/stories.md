@@ -544,3 +544,47 @@
     - utter_question
 * thank
     - utter_thank
+
+## Kich ban slide
+* greet
+    - utter_greet
+* ask_what{"phone_name":"iPhone 11","phone_property":"sim"}
+    - slot{"phone_name":"iPhone 11"}
+    - slot{"phone_property":"sim"}
+    - action_answer_what
+    - slot{"phone_property":null}
+    - slot{"phone_property_value":null}
+    - utter_question
+* affirm
+    - utter_affirm
+* inform{"phone_property":"chống nước"}
+    - slot{"phone_property":"chống nước"}
+    - ask_form
+    - form{"name":"ask_form"}
+    - slot{"phone_name":"iPhone 11"}
+    - slot{"phone_property":"chống nước"}
+    - slot{"phone_property":"chống nước"}
+    - form{"name":null}
+    - slot{"requested_slot":null}
+    - action_answer_yes_no
+    - slot{"phone_property":null}
+    - slot{"phone_property_value":null}
+    - utter_question
+* deny
+    - utter_deny
+* thank
+    - utter_thank
+
+## New Story
+
+* greet
+    - utter_greet
+* ask_what{"phone_name":"iPhone 11","phone_property":"sim"}
+    - slot{"phone_name":"iPhone 11"}
+    - slot{"phone_property":"sim"}
+    - action_answer_what
+    - slot{"phone_property":null}
+    - slot{"phone_property_value":null}
+    - utter_question
+* deny
+    - utter_deny

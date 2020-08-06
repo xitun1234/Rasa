@@ -101,6 +101,15 @@
 - cho hỏi [bộ nhớ trong](phone_property) của [iPhone 11](phone_name) là bao nhiêu
 - [iphone 11](phone_name) [giá](phone_property) nhiêu
 - [Iphone 11 64gb](phone_name) [giá](phone_property) nhiêu
+- Cho em hỏi [cấu hình](phone_property) của [Vivo Y19](phone_name)
+- Máy [Samsung Galaxy A11](phone_name) [sạc](phone_property) trong [bao lâu](phone_property_value)
+- Máy [Realme 5](phone_name) [sạc](phone_property) trong [bao lâu](phone_property_value)
+- Máy [Realme 5](phone_name) [sạc](phone_property) [bao lâu](phone_property_value) thì dầy
+- Máy [Realme 5](phone_name) [sạc](phone_property) [mấy tiếng](phone_property_value)
+- Cho hỏi [Vivo Y19](phone_name) xài [bao lâu](phone_property_value) hết [pin](phone_property)
+- Cho hỏi [Vivo Y19](phone_name) [sử dụng bao lâu](phone_property_value) hết [pin](phone_property)
+- [realme 11](phone_name) khác gì [realme 6](phone_name)
+- [Bộ nhớ trong](phone_property) của [Vivo V19](phone_name) là bao nhiêu
 
 ## intent:ask_yes_no
 - Cho em hỏi [Huawei P30](phone_name) có [chống nước](phone_property) không?
@@ -216,6 +225,16 @@
 - ad cho hỏi [Nokia 3310](phone_name) có chức năng [ghi âm](phone_property) cuộc gọi không vậy?
 - Cho hỏi [có hàng](phone_property_value) [iPhone 11](phone_name) không?
 - Cho hỏi [iPhone 11 Pro Max](phone_name) có [chống nước](phone_property) không?
+- Máy [Samsung Galaxy A20s](phone_name) khi mua mới có [nguyên seal](phone_property) k ạ
+- [Vivo Y19](phone_name) cập nhật [android 9](phone_property) được không add
+- [Vivo Y1s](phone_name) cập nhật [android 9](phone_property) được không add
+- Cho em hỏi [Vsmart Active 3](phone_name) có [mở khóa](phone_property) bằng [khuôn mặt](phone_property_value) không?
+- Cho hỏi máy [Mobell S61](phone_name) chơi được [game liên quân](phone_property) không?
+- Cho hỏi [iPhone 11](phone_name) có [nhân bản ứng dụng](phone_property) không?
+- cho hỏi [realme 6](phone_name) có [chống nước](phone_property) không
+- [Xiaomi Redmi Note 9 Pro](phone_name) [màn hình lcd](phone_property) hay amoled
+- Cho hỏi [iPhone 11](phone_name) chơi [liên quân](phone_property) [cấu hình cao](phone_property_value) được không?
+- Cho hỏi [Samsung Galaxy A50s](phone_name) chơi [liên quân](phone_property) [cấu hình cao](phone_property_value) được không?
 
 ## intent:ask_compare
 - Giúp em so sánh [Realme 5 Pro](phone_name) vs [Realme 6](phone_name) với ạ
@@ -276,6 +295,8 @@
 - So sánh giúp em [Samsung Galaxy A50s](phone_name) và [OPPO A9](phone_name) với ạ
 - so sánh [Galaxy A30s](phone_name) với [Vivo Y50](phone_name)
 - [realme c11](phone_name) và [realme c3i](phone_name) cái nào tốt hơn?
+- [realme](phone_name) 6 khác gì [realme c11](phone_name)
+- mình cần so sánh giúp [cấu hình](phone_property) máy [samsung galaxy a50s](phone_name) và [oppo a9](phone_name) với ạ
 
 ## intent:inform
 - Tôi muốn hỏi thông tin của điện thoại
@@ -339,6 +360,7 @@
 - Máy này [sạc](phone_property) [bao lâu](phone_property_value) thì đầy vậy ad.?
 - còn về việc [bảo hành](phone_property) thì sao
 - cho hỏi máy này có [ram](phone_property) khả dụng bao nhiêu vậy
+- Tôi muốn mua điện thoại [iPhone 11](phone_name). Giúp tôi tư vấn với
 
 ## intent:goodbye
 - bye
